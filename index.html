@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jack Nguyen - PM Intern Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF5A1F", // Vibrant orange
+                        "background-light": "#F9FAFB", // Very light gray/off-white
+                        "background-dark": "#111827", // Deep charcoal/black
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#1F2937",
+                        "text-light": "#1F2937",
+                        "text-dark": "#F3F4F6",
+                        "muted-light": "#6B7280",
+                        "muted-dark": "#9CA3AF",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1.5rem", // Generous border radius for cards
+                    },
+                },
+            },
+        };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .grid-bg {
+            background-image: radial-gradient(#E5E7EB 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .dark .grid-bg {
+            background-image: radial-gradient(#374151 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300 min-h-screen flex flex-col font-body">
+<header class="w-full max-w-7xl mx-auto p-6 md:p-8 flex justify-between items-center z-10 relative">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center bg-card-light dark:bg-card-dark shadow-sm">
+<span class="material-icons-round text-primary text-xl">token</span>
+</div>
+<a class="text-sm font-medium hover:text-primary transition-colors hidden sm:block" href="mailto:ndkn.work@gmail.com">ndkn.work@gmail.com</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round dark:hidden text-gray-600">dark_mode</span>
+<span class="material-icons-round hidden dark:block text-yellow-400">light_mode</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-card-light dark:bg-card-dark shadow-sm flex items-center justify-center hover:scale-105 transition-transform border border-gray-200 dark:border-gray-700">
+<span class="material-icons-round text-gray-700 dark:text-gray-200">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 pb-20 relative">
+<div class="absolute inset-0 -z-10 grid-bg opacity-40 pointer-events-none"></div>
+<section class="mt-8 md:mt-24 mb-24 text-center relative flex flex-col items-center justify-center">
+<div class="inline-flex items-center mb-6 px-4 py-2 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-gray-700 rounded-full text-sm font-semibold shadow-sm transform hover:scale-105 transition-all cursor-default">
+<span class="w-2.5 h-2.5 rounded-full bg-green-500 mr-2 animate-pulse"></span>
+            Open to PM internship opportunities for Summer 2026
+        </div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-tight mb-8">
+<div class="flex items-center justify-center flex-wrap gap-2 md:gap-4">
+<span>Hi, I'm</span>
+<div class="relative group inline-block align-middle">
+<img alt="Portrait of Jack Nguyen" class="w-16 h-16 md:w-24 md:h-24 rounded-2xl object-cover border-4 border-card-light dark:border-card-dark shadow-lg transform group-hover:rotate-6 transition-transform" src="photo.jpeg"/>
+</div>
+<span>Jack Nguyen!</span>
+</div>
+<div class="mt-4">
+<span class="text-gray-300 dark:text-gray-600">Co-Founder & COO at </span>
+<span class="text-primary">Lumist.ai</span>
+</div>
+</h1>
+<p class="text-xl text-muted-light dark:text-muted-dark max-w-2xl mx-auto leading-relaxed mb-10">
+            I build AI-powered products that solve real problems. As co-founder of an EdTech startup, I've shipped an MVP to 1,500+ users, led a cross-functional team of 14, and validated product-market fit in Vietnam's SAT prep market.
+        </p>
+<div class="flex flex-col sm:flex-row items-center gap-4">
+<button class="bg-black dark:bg-white text-white dark:text-black px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-opacity shadow-lg min-w-[180px]">
+                View Resume
+            </button>
+<button id="copyEmailBtn" class="bg-white dark:bg-card-dark text-black dark:text-white border border-gray-200 dark:border-gray-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors shadow-sm min-w-[180px]">
+                Copy Email
+            </button>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 grid-flow-dense">
+<div class="md:col-span-4 bg-card-light dark:bg-card-dark p-6 md:p-8 rounded-DEFAULT shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow flex flex-col h-full order-2 md:order-1">
+<div class="flex items-center justify-between mb-6">
+<span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-xs font-semibold text-muted-light dark:text-muted-dark uppercase tracking-wide">My Experience</span>
+</div>
+<div class="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700 space-y-8 flex-grow">
+<div class="relative group">
+<div class="absolute -left-[21px] top-1.5 w-3 h-3 bg-primary rounded-full border-2 border-card-light dark:border-card-dark"></div>
+<h3 class="font-bold text-lg leading-tight">Co-Founder & COO at Lumist.ai</h3>
+<p class="text-xs text-muted-light dark:text-muted-dark mt-1">Jan 2024 - Present - Remote - Full time</p>
+</div>
+<div class="relative group">
+<div class="absolute -left-[21px] top-1.5 w-3 h-3 bg-primary rounded-full border-2 border-card-light dark:border-card-dark"></div>
+<h3 class="font-bold text-lg leading-tight">Student ERP Analyst at USF IT</h3>
+<p class="text-xs text-muted-light dark:text-muted-dark mt-1">2022 - 2025 - Part time → Full time</p>
+</div>
+<div class="relative group">
+<div class="absolute -left-[21px] top-1.5 w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full border-2 border-card-light dark:border-card-dark group-hover:bg-primary transition-colors"></div>
+<h3 class="font-bold text-lg leading-tight">Data Analytics Intern at VNG Corporation</h3>
+<p class="text-xs text-muted-light dark:text-muted-dark mt-1">Jun 2024 - Aug 2024 - Ho Chi Minh City - Internship</p>
+</div>
+<div class="relative group">
+<div class="absolute -left-[21px] top-1.5 w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full border-2 border-card-light dark:border-card-dark group-hover:bg-primary transition-colors"></div>
+<h3 class="font-bold text-lg leading-tight">Risk Advisory Intern at Deloitte Vietnam</h3>
+<p class="text-xs text-muted-light dark:text-muted-dark mt-1">May 2023 - Jul 2023 - Hanoi - Internship</p>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800 text-center">
+<a class="text-sm font-medium text-muted-light dark:text-muted-dark hover:text-primary transition-colors flex items-center justify-center gap-1" href="#">
+                View Full Resume <span class="material-icons-round text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-8 bg-card-light dark:bg-card-dark p-6 md:p-8 rounded-DEFAULT shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow flex flex-col order-1 md:order-2">
+<div class="flex items-center justify-between mb-6">
+<span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-xs font-semibold text-muted-light dark:text-muted-dark uppercase tracking-wide">Featured Projects</span>
+<a class="group flex items-center gap-1 text-xs font-medium text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#">
+                View All <span class="material-icons-round text-sm group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 h-full">
+<a href="projects/lumist-analytics.html" class="bg-gray-50 dark:bg-gray-900/50 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 flex flex-col h-full hover:border-primary/20 transition-colors group/card cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<div class="w-12 h-12 rounded-xl bg-white dark:bg-gray-800 flex items-center justify-center shadow-sm text-primary group-hover/card:scale-110 transition-transform">
+<span class="material-icons-round text-2xl">analytics</span>
+</div>
+<span class="px-2 py-1 rounded-md bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 text-[10px] font-bold uppercase tracking-wide">Launched</span>
+</div>
+<h4 class="text-xl font-bold mb-2 group-hover/card:text-primary transition-colors">Lumist Analytics Dashboard</h4>
+<p class="text-sm text-muted-light dark:text-muted-dark leading-relaxed mb-4 flex-grow">
+                    Full-stack analytics platform tracking DAU, retention cohorts, acquisition funnels, and feature adoption. Built with React, Supabase, and Gemini AI-powered insights.
+                </p>
+<div class="flex items-center gap-4">
+<a href="https://lumist-analytics-demo.vercel.app/" target="_blank" class="flex items-center text-sm font-semibold text-white bg-primary px-3 py-1.5 rounded-full hover:opacity-90 transition-opacity" onclick="event.stopPropagation()">
+<span class="material-icons-round text-base mr-1">play_arrow</span> Live Demo
+</a>
+<span class="flex items-center text-sm font-semibold text-primary">
+                        View Case Study <span class="material-icons-round text-base ml-1 transition-transform group-hover/card:translate-x-1">arrow_forward</span>
+</span>
+</div>
+</a>
+<div class="bg-gray-50 dark:bg-gray-900/50 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 flex flex-col h-full hover:border-primary/20 transition-colors group/card cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<div class="w-12 h-12 rounded-xl bg-white dark:bg-gray-800 flex items-center justify-center shadow-sm text-primary group-hover/card:scale-110 transition-transform">
+<span class="material-icons-round text-2xl">smart_toy</span>
+</div>
+<span class="px-2 py-1 rounded-md bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400 text-[10px] font-bold uppercase tracking-wide">Technical</span>
+</div>
+<h4 class="text-xl font-bold mb-2 group-hover/card:text-primary transition-colors">AI Customer Support System</h4>
+<p class="text-sm text-muted-light dark:text-muted-dark leading-relaxed mb-4 flex-grow">
+                    RAG architecture using Supabase Vector Store + Gemini for automated support across Discord and Messenger, with n8n workflows for auto-escalation.
+                </p>
+<div class="flex items-center text-sm font-semibold text-primary">
+                    Learn More <span class="material-icons-round text-base ml-1 transition-transform group-hover/card:translate-x-1">arrow_forward</span>
+</div>
+</div>
+<div class="bg-gray-50 dark:bg-gray-900/50 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 flex flex-col h-full hover:border-primary/20 transition-colors group/card cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<div class="w-12 h-12 rounded-xl bg-white dark:bg-gray-800 flex items-center justify-center shadow-sm text-primary group-hover/card:scale-110 transition-transform">
+<span class="material-icons-round text-2xl">auto_awesome</span>
+</div>
+<span class="px-2 py-1 rounded-md bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400 text-[10px] font-bold uppercase tracking-wide">Automation</span>
+</div>
+<h4 class="text-xl font-bold mb-2 group-hover/card:text-primary transition-colors">Lead Scoring CRM</h4>
+<p class="text-sm text-muted-light dark:text-muted-dark leading-relaxed mb-4 flex-grow">
+                    n8n automation workflows for lead qualification—form submissions trigger scoring logic and Slack notifications for sales follow-up.
+                </p>
+<div class="flex items-center text-sm font-semibold text-primary">
+                    Learn More <span class="material-icons-round text-base ml-1 transition-transform group-hover/card:translate-x-1">arrow_forward</span>
+</div>
+</div>
+<div class="bg-gray-50 dark:bg-gray-900/50 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 flex flex-col h-full hover:border-primary/20 transition-colors group/card cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<div class="w-12 h-12 rounded-xl bg-white dark:bg-gray-800 flex items-center justify-center shadow-sm text-primary group-hover/card:scale-110 transition-transform">
+<span class="material-icons-round text-2xl">school</span>
+</div>
+<span class="px-2 py-1 rounded-md bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 text-[10px] font-bold uppercase tracking-wide">Data</span>
+</div>
+<h4 class="text-xl font-bold mb-2 group-hover/card:text-primary transition-colors">Class Feedback Pipeline</h4>
+<p class="text-sm text-muted-light dark:text-muted-dark leading-relaxed mb-4 flex-grow">
+                    Automated student feedback collection from Zoom polls → n8n processing → Google Sheets → Looker dashboard. Surfaced tutor performance gaps and 4.5/5 satisfaction scores.
+                </p>
+<div class="flex items-center text-sm font-semibold text-primary">
+                    Learn More <span class="material-icons-round text-base ml-1 transition-transform group-hover/card:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 bg-card-light dark:bg-card-dark p-6 md:p-8 rounded-DEFAULT shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow flex flex-col justify-between order-3">
+<div class="flex justify-start mb-6">
+<span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-xs font-semibold text-muted-light dark:text-muted-dark uppercase tracking-wide">My PM Process</span>
+</div>
+<div class="mb-8" id="pm-process-content">
+<h3 class="text-xl font-bold mb-3">01 Discover</h3>
+<p class="text-muted-light dark:text-muted-dark text-sm leading-relaxed max-w-lg">
+                Dig into the problem space through user interviews, analytics, and stakeholder conversations. Understand the "why" before jumping to solutions.
+            </p>
+</div>
+<div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full p-1.5 flex items-center justify-between text-xs font-medium relative">
+<div id="step-indicator" class="absolute left-1.5 top-1.5 bottom-1.5 w-[calc(20%-6px)] bg-black dark:bg-white rounded-full shadow-md z-0 transition-all duration-300"></div>
+<button onclick="showStep(1)" class="step-btn flex-1 py-2 text-center relative z-10 text-white dark:text-black">Discover</button>
+<button onclick="showStep(2)" class="step-btn flex-1 py-2 text-center relative z-10 text-muted-light dark:text-muted-dark hover:text-black dark:hover:text-white transition-colors">Define</button>
+<button onclick="showStep(3)" class="step-btn flex-1 py-2 text-center relative z-10 text-muted-light dark:text-muted-dark hover:text-black dark:hover:text-white transition-colors">Design</button>
+<button onclick="showStep(4)" class="step-btn flex-1 py-2 text-center relative z-10 text-muted-light dark:text-muted-dark hover:text-black dark:hover:text-white transition-colors hidden sm:block">Ship</button>
+<button onclick="showStep(5)" class="step-btn flex-1 py-2 text-center relative z-10 text-muted-light dark:text-muted-dark hover:text-black dark:hover:text-white transition-colors hidden sm:block">Iterate</button>
+</div>
+</div>
+<div class="md:col-span-4 bg-card-light dark:bg-card-dark rounded-DEFAULT shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow overflow-hidden relative min-h-[300px] group order-4">
+<span class="absolute top-6 left-6 z-10 px-3 py-1 bg-white/90 dark:bg-black/80 backdrop-blur rounded-full text-xs font-semibold text-muted-light dark:text-muted-dark uppercase tracking-wide shadow-sm">Location</span>
+<div class="absolute inset-0 z-0 bg-gradient-to-br from-primary/20 via-blue-500/10 to-teal-500/20 dark:from-primary/10 dark:via-blue-500/5 dark:to-teal-500/10 group-hover:scale-110 transition-transform duration-1000"></div>
+<div class="absolute inset-0 z-0 opacity-30 dark:opacity-20" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%239C92AC\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+<div class="absolute bottom-0 inset-x-0 p-8 bg-gradient-to-t from-white via-white/90 to-transparent dark:from-gray-900 dark:via-gray-900/90 flex flex-col items-center justify-end h-1/2">
+<h2 class="text-2xl font-bold tracking-widest uppercase mb-1">Tampa</h2>
+<p class="text-xs font-medium tracking-widest text-muted-light dark:text-muted-dark uppercase mb-2">Florida, USA</p>
+<p class="text-[10px] text-gray-400 font-mono">27.9506° N, 82.4572° W</p>
+</div>
+</div>
+</section>
+<footer class="mt-20 border-t border-gray-200 dark:border-gray-800 pt-8 pb-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-sm text-muted-light dark:text-muted-dark">
+<p>© 2024 Alex Carter. All Rights Reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="#">Instagram</a>
+</div>
+</footer>
+</main>
+<script>
+const pmSteps = [
+    { title: "01 Discover", desc: "Dig into the problem space through user interviews, analytics, and stakeholder conversations. Understand the \"why\" before jumping to solutions." },
+    { title: "02 Define", desc: "Translate insights into clear problem statements and success metrics. What are we solving? How do we measure success?" },
+    { title: "03 Design", desc: "Rapid prototyping with Figma wireframes and user flows. Quick feedback loops with engineering and design." },
+    { title: "04 Ship", desc: "Sprint planning, backlog prioritization, and execution. Keep cross-functional teams aligned through standups and async updates." },
+    { title: "05 Iterate", desc: "Post-launch analytics, user feedback, and continuous improvement. Every feature is a hypothesis to validate." }
+];
+
+function showStep(step) {
+    const content = document.getElementById('pm-process-content');
+    const indicator = document.getElementById('step-indicator');
+    const buttons = document.querySelectorAll('.step-btn');
+
+    content.querySelector('h3').textContent = pmSteps[step - 1].title;
+    content.querySelector('p').textContent = pmSteps[step - 1].desc;
+
+    const offset = (step - 1) * 20;
+    indicator.style.left = `calc(${offset}% + 6px)`;
+
+    buttons.forEach((btn, i) => {
+        if (i === step - 1) {
+            btn.classList.remove('text-muted-light', 'dark:text-muted-dark');
+            btn.classList.add('text-white', 'dark:text-black');
+        } else {
+            btn.classList.remove('text-white', 'dark:text-black');
+            btn.classList.add('text-muted-light', 'dark:text-muted-dark');
+        }
+    });
+}
+
+document.getElementById('copyEmailBtn').addEventListener('click', function() {
+    navigator.clipboard.writeText('ndkn.work@gmail.com').then(() => {
+        const originalText = this.textContent;
+        this.textContent = 'Copied!';
+        setTimeout(() => { this.textContent = originalText; }, 2000);
+    });
+});
+</script>
+</body></html>

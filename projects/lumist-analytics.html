@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lumist Analytics Dashboard - Jack Nguyen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#FF5A1F",
+                    "background-light": "#F9FAFB",
+                    "background-dark": "#111827",
+                    "card-light": "#FFFFFF",
+                    "card-dark": "#1F2937",
+                    "text-light": "#1F2937",
+                    "text-dark": "#F3F4F6",
+                    "muted-light": "#6B7280",
+                    "muted-dark": "#9CA3AF",
+                },
+                fontFamily: {
+                    display: ["Inter", "sans-serif"],
+                    body: ["Inter", "sans-serif"],
+                },
+                borderRadius: {
+                    DEFAULT: "1.5rem",
+                },
+            },
+        },
+    };
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<style>
+    body { font-family: 'Inter', sans-serif; }
+    .grid-bg {
+        background-image: radial-gradient(#E5E7EB 1px, transparent 1px);
+        background-size: 24px 24px;
+    }
+    .dark .grid-bg {
+        background-image: radial-gradient(#374151 1px, transparent 1px);
+    }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300 min-h-screen flex flex-col font-body">
+
+<!-- Navigation -->
+<header class="w-full max-w-5xl mx-auto p-6 md:p-8 flex justify-between items-center z-10 relative">
+<a href="../index.html" class="flex items-center gap-2 text-sm font-medium text-muted-light dark:text-muted-dark hover:text-primary transition-colors">
+<span class="material-icons-round text-base">arrow_back</span>
+Back to Portfolio
+</a>
+<button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round dark:hidden text-gray-600">dark_mode</span>
+<span class="material-icons-round hidden dark:block text-yellow-400">light_mode</span>
+</button>
+</header>
+
+<main class="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 pb-20 relative">
+<div class="absolute inset-0 -z-10 grid-bg opacity-40 pointer-events-none"></div>
+
+<!-- Hero Section -->
+<section class="mt-8 md:mt-16 mb-16 text-center">
+<div class="inline-flex items-center mb-6 px-4 py-2 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-gray-700 rounded-full text-sm font-semibold shadow-sm">
+<span class="material-icons-round text-primary text-base mr-2">analytics</span>
+Case Study
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+Lumist Analytics Dashboard
+</h1>
+<p class="text-xl text-muted-light dark:text-muted-dark max-w-2xl mx-auto leading-relaxed mb-8">
+A full-stack product analytics platform I built to drive data-informed decisions for our SAT prep startup
+</p>
+
+<!-- Live Demo Button -->
+<div class="mb-8">
+<a href="https://lumist-analytics-demo.vercel.app/" target="_blank" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-lg hover:opacity-90 transition-opacity shadow-lg">
+<span class="material-icons-round">play_arrow</span>
+View Live Demo
+</a>
+<p class="text-sm text-muted-light dark:text-muted-dark mt-3">Demo uses simulated data for portfolio purposes</p>
+</div>
+
+<!-- Tech Stack Badges -->
+<div class="flex flex-wrap justify-center gap-3">
+<span class="px-4 py-2 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium">React</span>
+<span class="px-4 py-2 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium">Supabase</span>
+<span class="px-4 py-2 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium">Recharts</span>
+<span class="px-4 py-2 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium">Gemini AI</span>
+<span class="px-4 py-2 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium">Vercel</span>
+</div>
+</section>
+
+<!-- The Problem Section -->
+<section class="mb-16">
+<div class="bg-card-light dark:bg-card-dark p-8 md:p-10 rounded-DEFAULT shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
+<span class="material-icons-round text-red-600 dark:text-red-400">warning</span>
+</div>
+<h2 class="text-2xl font-bold">The Problem</h2>
+</div>
+<div class="space-y-4 text-muted-light dark:text-muted-dark">
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">No visibility into user behavior</strong> — decisions were gut-feel</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">Couldn't track retention, feature adoption, or acquisition funnels</strong></p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">Manual reporting was unsustainable</strong> at 1,500+ users</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- What I Built Section -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-icons-round text-primary">build</span>
+</div>
+<h2 class="text-2xl font-bold">What I Built</h2>
+</div>
+<p class="text-muted-light dark:text-muted-dark mb-8 max-w-2xl">
+A comprehensive analytics platform with 7 modules covering every aspect of our product performance:
+</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Module 1 -->
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-blue-600 dark:text-blue-400 text-2xl">trending_up</span>
+</div>
+<h3 class="font-bold text-lg mb-2">User Engagement</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">DAU/MAU tracking, weekly patterns, AI-powered insights on engagement trends</p>
+</div>
+<!-- Module 2 -->
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-green-600 dark:text-green-400 text-2xl">replay</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Retention Analytics</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">D1/D7/D30 cohorts, retention heatmap, SAT cycle impact analysis</p>
+</div>
+<!-- Module 3 -->
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-purple-600 dark:text-purple-400 text-2xl">filter_alt</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Acquisition Funnels</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Sankey diagram visualization, referral tracking, cohort conversion rates</p>
+</div>
+<!-- Module 4 -->
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-orange-600 dark:text-orange-400 text-2xl">touch_app</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Feature Adoption</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Usage trends by feature, adoption curves, power user identification</p>
+</div>
+<!-- Module 5 -->
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-emerald-600 dark:text-emerald-400 text-2xl">payments</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Revenue & Churn</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">MRR tracking, subscriber status breakdown, at-risk user alerts</p>
+</div>
+<!-- Module 6 -->
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-pink-100 dark:bg-pink-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-pink-600 dark:text-pink-400 text-2xl">share</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Social Media Analytics</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Facebook/Threads performance metrics, audience demographics</p>
+</div>
+<!-- Module 7 -->
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center mb-4">
+<span class="material-icons-round text-gray-600 dark:text-gray-400 text-2xl">admin_panel_settings</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Admin Panel</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Role-based access control, team invite system, comprehensive audit logs</p>
+</div>
+</div>
+</section>
+
+<!-- Technical Highlights Section -->
+<section class="mb-16">
+<div class="bg-card-light dark:bg-card-dark p-8 md:p-10 rounded-DEFAULT shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-icons-round text-primary">code</span>
+</div>
+<h2 class="text-2xl font-bold">Technical Highlights</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-icons-round text-green-600 dark:text-green-400 text-lg">storage</span>
+</div>
+<div>
+<h3 class="font-semibold mb-1">Triple Supabase Architecture</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Separate schemas for analytics, auth, and social data—clean separation of concerns</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-icons-round text-blue-600 dark:text-blue-400 text-lg">psychology</span>
+</div>
+<div>
+<h3 class="font-semibold mb-1">Gemini 2.0 Flash AI Insights</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">AI-generated analysis with 1-hour caching for cost optimization</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-icons-round text-purple-600 dark:text-purple-400 text-lg">bolt</span>
+</div>
+<div>
+<h3 class="font-semibold mb-1">Edge Functions</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">SAT seat finder automation, transactional emails via Supabase Edge</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-icons-round text-orange-600 dark:text-orange-400 text-lg">security</span>
+</div>
+<div>
+<h3 class="font-semibold mb-1">Google OAuth + RBAC</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Role-based route protection with admin, analyst, and viewer roles</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Impact Section -->
+<section class="mb-16">
+<div class="bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-8 md:p-10 rounded-DEFAULT border border-primary/20">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
+<span class="material-icons-round text-primary">rocket_launch</span>
+</div>
+<h2 class="text-2xl font-bold">Impact</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="text-center md:text-left">
+<div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+<span class="material-icons-round text-green-500">check_circle</span>
+<span class="font-bold text-lg">Data-Driven Roadmap</span>
+</div>
+<p class="text-sm text-muted-light dark:text-muted-dark">Weekly roadmap decisions now backed by real user data instead of gut-feel</p>
+</div>
+<div class="text-center md:text-left">
+<div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+<span class="material-icons-round text-green-500">check_circle</span>
+<span class="font-bold text-lg">4x Feature Usage</span>
+</div>
+<p class="text-sm text-muted-light dark:text-muted-dark">Identified AI Planner UX issue → redesign grew usage from 24 to 100+ active users</p>
+</div>
+<div class="text-center md:text-left">
+<div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+<span class="material-icons-round text-green-500">check_circle</span>
+<span class="font-bold text-lg">Scalable Foundation</span>
+</div>
+<p class="text-sm text-muted-light dark:text-muted-dark">Built the analytics infrastructure to support scaling our paid user base</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="text-center">
+<a href="../index.html" class="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-opacity shadow-lg">
+<span class="material-icons-round">arrow_back</span>
+Back to Portfolio
+</a>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full max-w-5xl mx-auto px-6 py-8 text-center text-sm text-muted-light dark:text-muted-dark">
+<p>© 2025 Jack Nguyen. All Rights Reserved.</p>
+</footer>
+
+</body></html>
