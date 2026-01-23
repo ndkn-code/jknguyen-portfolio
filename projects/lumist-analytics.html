@@ -93,28 +93,71 @@ View Live Demo
 </div>
 </section>
 
-<!-- The Problem Section -->
+<!-- Why We Built This Section -->
 <section class="mb-16">
 <div class="bg-card-light dark:bg-card-dark p-8 md:p-10 rounded-DEFAULT shadow-sm border border-gray-100 dark:border-gray-800">
 <div class="flex items-center gap-3 mb-6">
 <div class="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
-<span class="material-icons-round text-red-600 dark:text-red-400">warning</span>
+<span class="material-icons-round text-red-600 dark:text-red-400">help_outline</span>
 </div>
-<h2 class="text-2xl font-bold">The Problem</h2>
+<h2 class="text-2xl font-bold">Why We Built This</h2>
 </div>
 <div class="space-y-4 text-muted-light dark:text-muted-dark">
 <div class="flex items-start gap-3">
 <span class="material-icons-round text-red-500 mt-0.5">close</span>
-<p><strong class="text-text-light dark:text-text-dark">No visibility into user behavior</strong> — decisions were gut-feel</p>
+<p><strong class="text-text-light dark:text-text-dark">Gut-feel product decisions</strong> — Leadership was making choices based on intuition from traditional SAT prep, but we were an AI-first platform serving a different market.</p>
 </div>
 <div class="flex items-start gap-3">
 <span class="material-icons-round text-red-500 mt-0.5">close</span>
-<p><strong class="text-text-light dark:text-text-dark">Couldn't track retention, feature adoption, or acquisition funnels</strong></p>
+<p><strong class="text-text-light dark:text-text-dark">Zero visibility into growth</strong> — We had no way to tell if we were actually growing or just busy churning through users.</p>
 </div>
 <div class="flex items-start gap-3">
 <span class="material-icons-round text-red-500 mt-0.5">close</span>
-<p><strong class="text-text-light dark:text-text-dark">Manual reporting was unsustainable</strong> at 1,500+ users</p>
+<p><strong class="text-text-light dark:text-text-dark">Lean startup without data</strong> — We were pursuing lean methodology but had no data to validate or invalidate assumptions.</p>
 </div>
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">Investor-readiness gap</strong> — We needed metrics to show traction, not just vanity numbers.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- What We Learned Section -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center">
+<span class="material-icons-round text-emerald-600 dark:text-emerald-400">lightbulb</span>
+</div>
+<h2 class="text-2xl font-bold">What We Learned</h2>
+</div>
+<p class="text-muted-light dark:text-muted-dark mb-8 max-w-2xl">
+Key discoveries from the data that changed how we built and marketed the product:
+</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Discovery 1 -->
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-emerald-600 dark:text-emerald-400 text-2xl">emoji_objects</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Brain Teaser Was #1</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">"Question of the Day" had highest engagement. Vietnamese students preferred short learning sessions—contradicting our assumption that they wanted intensive sessions like traditional prep.</p>
+</div>
+<!-- Discovery 2 -->
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-red-600 dark:text-red-400 text-2xl">bug_report</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Session Error Log Was Broken</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Analytics revealed the error tracking feature wasn't being used. Investigation showed UX issues preventing students from logging mistakes—we fixed it.</p>
+</div>
+<!-- Discovery 3 -->
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-blue-600 dark:text-blue-400 text-2xl">calendar_today</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Weekend + Monday Pattern</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Data showed peak usage on Sat/Sun/Monday. We shifted our best social media content and group notifications to those days, increasing engagement.</p>
 </div>
 </div>
 </section>
@@ -136,24 +179,27 @@ A comprehensive analytics platform with 7 modules covering every aspect of our p
 <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-4">
 <span class="material-icons-round text-blue-600 dark:text-blue-400 text-2xl">trending_up</span>
 </div>
-<h3 class="font-bold text-lg mb-2">User Engagement</h3>
-<p class="text-sm text-muted-light dark:text-muted-dark">DAU/MAU tracking, weekly patterns, AI-powered insights on engagement trends</p>
+<h3 class="font-bold text-lg mb-2">User Engagement (DAU/WAU)</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark mb-2">DAU/MAU tracking, weekly patterns, AI-powered insights</p>
+<p class="text-xs text-primary font-medium italic">"Are students actually coming back, or did we just acquire them once?"</p>
 </div>
 <!-- Module 2 -->
 <div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
 <div class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-4">
 <span class="material-icons-round text-green-600 dark:text-green-400 text-2xl">replay</span>
 </div>
-<h3 class="font-bold text-lg mb-2">Retention Analytics</h3>
-<p class="text-sm text-muted-light dark:text-muted-dark">D1/D7/D30 cohorts, retention heatmap, SAT cycle impact analysis</p>
+<h3 class="font-bold text-lg mb-2">Cohort Retention</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark mb-2">D1/D7/D30 cohorts, retention heatmap, SAT cycle impact</p>
+<p class="text-xs text-primary font-medium italic">"Are we improving over time, or are newer users churning faster?"</p>
 </div>
 <!-- Module 3 -->
 <div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
 <div class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mb-4">
 <span class="material-icons-round text-purple-600 dark:text-purple-400 text-2xl">filter_alt</span>
 </div>
-<h3 class="font-bold text-lg mb-2">Acquisition Funnels</h3>
-<p class="text-sm text-muted-light dark:text-muted-dark">Sankey diagram visualization, referral tracking, cohort conversion rates</p>
+<h3 class="font-bold text-lg mb-2">Conversion Funnel</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark mb-2">Sankey diagram visualization, referral tracking, cohort conversions</p>
+<p class="text-xs text-primary font-medium italic">"Where exactly do we lose potential paying users?"</p>
 </div>
 <!-- Module 4 -->
 <div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
@@ -161,7 +207,8 @@ A comprehensive analytics platform with 7 modules covering every aspect of our p
 <span class="material-icons-round text-orange-600 dark:text-orange-400 text-2xl">touch_app</span>
 </div>
 <h3 class="font-bold text-lg mb-2">Feature Adoption</h3>
-<p class="text-sm text-muted-light dark:text-muted-dark">Usage trends by feature, adoption curves, power user identification</p>
+<p class="text-sm text-muted-light dark:text-muted-dark mb-2">Usage trends by feature, adoption curves, power users</p>
+<p class="text-xs text-primary font-medium italic">"Which features justify investment vs. which should we kill?"</p>
 </div>
 <!-- Module 5 -->
 <div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">

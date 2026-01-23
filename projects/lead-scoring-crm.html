@@ -84,42 +84,32 @@ Automated lead scoring pipeline with Jira workflow integration and team accounta
 </div>
 </section>
 
-<!-- The Problem Section -->
+<!-- Why We Built This Section -->
 <section class="mb-16">
-<div class="flex items-center gap-3 mb-8">
+<div class="bg-card-light dark:bg-card-dark p-8 md:p-10 rounded-DEFAULT shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-3 mb-6">
 <div class="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
-<span class="material-icons-round text-red-600 dark:text-red-400">warning</span>
+<span class="material-icons-round text-red-600 dark:text-red-400">help_outline</span>
 </div>
-<h2 class="text-2xl font-bold">The Problem</h2>
+<h2 class="text-2xl font-bold">Why We Built This</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-icons-round text-red-500">close</span>
-<h3 class="font-bold">Manual Lead Processing</h3>
+<div class="space-y-4 text-muted-light dark:text-muted-dark">
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">12-hour timezone gap</strong> — Leadership (me + CEO) based in US, sales team in Vietnam. Daily oversight was impossible.</p>
 </div>
-<p class="text-sm text-muted-light dark:text-muted-dark">Every form submission manually reviewed and assigned</p>
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">No existing CRM</strong> — Leads came in via forms and sat in spreadsheets with no system for management.</p>
 </div>
-<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-icons-round text-red-500">close</span>
-<h3 class="font-bold">No Priority System</h3>
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">No protocol for follow-ups</strong> — Couldn't tell if sales was thriving or struggling without being in the room.</p>
 </div>
-<p class="text-sm text-muted-light dark:text-muted-dark">All leads treated equally regardless of conversion likelihood</p>
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">Didn't want to micromanage</strong> — Needed visibility and accountability without constantly checking in.</p>
 </div>
-<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-icons-round text-red-500">close</span>
-<h3 class="font-bold">Lost Partial Leads</h3>
-</div>
-<p class="text-sm text-muted-light dark:text-muted-dark">Abandoned forms with good data were never followed up</p>
-</div>
-<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-icons-round text-red-500">close</span>
-<h3 class="font-bold">No Accountability</h3>
-</div>
-<p class="text-sm text-muted-light dark:text-muted-dark">No tracking of response times or penalties for delays</p>
 </div>
 </div>
 </section>
@@ -211,7 +201,49 @@ Website form submissions trigger automated scoring based on 5 factors. Qualified
 <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
 <span class="material-icons-round text-primary">functions</span>
 </div>
-<h2 class="text-2xl font-bold">Scoring Algorithm</h2>
+<h2 class="text-2xl font-bold">Why These 5 Scoring Factors</h2>
+</div>
+
+<!-- Why Explanation -->
+<div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-2xl border border-emerald-200 dark:border-emerald-800 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-emerald-600 dark:text-emerald-400 mt-0.5">lightbulb</span>
+<div>
+<p class="text-sm text-muted-light dark:text-muted-dark"><strong class="text-text-light dark:text-text-dark">Developed through interviews, not guesswork.</strong> I talked to the CEO (5+ years SAT teaching), other tutors, sales team, and alumni students to understand what makes a lead convert.</p>
+</div>
+</div>
+</div>
+
+<!-- Why Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+<div class="bg-card-light dark:bg-card-dark p-5 rounded-2xl border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-icons-round text-emerald-500 text-lg">person_add</span>
+<span class="font-bold text-sm">Source (+45 for referrals)</span>
+</div>
+<p class="text-xs text-muted-light dark:text-muted-dark">Sales confirmed referred leads closed at much higher rates—worth prioritizing.</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-5 rounded-2xl border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-icons-round text-blue-500 text-lg">schedule</span>
+<span class="font-bold text-sm">Urgency (test date timing)</span>
+</div>
+<p class="text-xs text-muted-light dark:text-muted-dark">3-6 months out is the sweet spot—enough time to improve, urgent enough to commit.</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-5 rounded-2xl border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-icons-round text-purple-500 text-lg">school</span>
+<span class="font-bold text-sm">Course type</span>
+</div>
+<p class="text-xs text-muted-light dark:text-muted-dark">Pre-SAT and 1-1 students showed higher intent and lifetime value.</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-5 rounded-2xl border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-icons-round text-orange-500 text-lg">person</span>
+<span class="font-bold text-sm">Profile (age/country)</span>
+</div>
+<p class="text-xs text-muted-light dark:text-muted-dark">US-based students aged 16-18 matched our ideal customer profile from alumni interviews.</p>
+</div>
 </div>
 
 <!-- Scoring Factors Table -->
@@ -351,11 +383,22 @@ Website form submissions trigger automated scoring based on 5 factors. Qualified
 <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
 <span class="material-icons-round text-primary">gavel</span>
 </div>
-<h2 class="text-2xl font-bold">Accountability System</h2>
+<h2 class="text-2xl font-bold">Why the Penalty System</h2>
 </div>
+
+<!-- Why Explanation -->
+<div class="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-2xl border border-amber-200 dark:border-amber-800 mb-6">
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-amber-600 dark:text-amber-400 mt-0.5">lightbulb</span>
+<div>
+<p class="text-sm text-muted-light dark:text-muted-dark"><strong class="text-text-light dark:text-text-dark">First few weeks after launch, sales team wasn't adhering to follow-up timelines.</strong> Rather than micromanage from across the world, I built automated accountability: system tracks overdue tickets and escalates penalties daily. Penalties are visible to everyone—creates peer accountability without requiring me to chase people.</p>
+</div>
+</div>
+</div>
+
 <div class="bg-card-light dark:bg-card-dark p-6 md:p-8 rounded-DEFAULT border border-gray-100 dark:border-gray-800">
 <p class="text-muted-light dark:text-muted-dark mb-8">
-Daily Jira automation runs at 2 PM EST checking for overdue tickets in Queue status. Escalating penalties ensure timely follow-ups:
+Daily Jira automation runs at 2 PM EST checking for overdue tickets in Queue status:
 </p>
 
 <!-- Penalty Timeline -->

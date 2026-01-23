@@ -85,42 +85,65 @@ Multi-platform RAG chatbot with intelligent sales tracking and human escalation
 </div>
 </section>
 
-<!-- The Problem Section -->
+<!-- Why We Built This Section -->
+<section class="mb-16">
+<div class="bg-card-light dark:bg-card-dark p-8 md:p-10 rounded-DEFAULT shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
+<span class="material-icons-round text-red-600 dark:text-red-400">help_outline</span>
+</div>
+<h2 class="text-2xl font-bold">Why We Built This</h2>
+</div>
+<div class="space-y-4 text-muted-light dark:text-muted-dark">
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">No budget for support staff</strong> — We couldn't hire dedicated support across multiple platforms (Zalo, Facebook, Discord).</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">12-hour timezone gap</strong> — Operating across Vietnam and US time zones meant messages sat unanswered for hours.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">Zalo OA was critical</strong> — Vietnamese parents (key decision-makers) expected us to be present on Zalo, but we couldn't staff it 24/7.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-red-500 mt-0.5">close</span>
+<p><strong class="text-text-light dark:text-text-dark">No sales team yet</strong> — Needed AI to qualify leads and handle FAQs until humans could follow up.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Why RAG Architecture Section -->
 <section class="mb-16">
 <div class="flex items-center gap-3 mb-8">
-<div class="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
-<span class="material-icons-round text-red-600 dark:text-red-400">warning</span>
+<div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+<span class="material-icons-round text-blue-600 dark:text-blue-400">architecture</span>
 </div>
-<h2 class="text-2xl font-bold">The Problem</h2>
+<h2 class="text-2xl font-bold">Why RAG Architecture</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-icons-round text-red-500">close</span>
-<h3 class="font-bold">Fragmented Channels</h3>
+<div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-blue-600 dark:text-blue-400 text-2xl">science</span>
 </div>
-<p class="text-sm text-muted-light dark:text-muted-dark">Support scattered across Zalo and Discord with no unified view</p>
-</div>
-<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-icons-round text-red-500">close</span>
-<h3 class="font-bold">Manual Triage</h3>
-</div>
-<p class="text-sm text-muted-light dark:text-muted-dark">Team manually routing every message at 1,500+ users</p>
+<h3 class="font-bold text-lg mb-2">Research-Backed Choice</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Research showed RAG was the best approach for chatbots that need accurate, up-to-date information without constant retraining.</p>
 </div>
 <div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-icons-round text-red-500">close</span>
-<h3 class="font-bold">No Sales Tracking</h3>
+<div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-emerald-600 dark:text-emerald-400 text-2xl">verified</span>
 </div>
-<p class="text-sm text-muted-light dark:text-muted-dark">Couldn't identify qualified leads or track conversation stages</p>
+<h3 class="font-bold text-lg mb-2">Hard-Coded Critical Info</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Pricing, refund policy, course details are hard-coded/prompted to ensure accuracy—we couldn't risk AI hallucinating on high-stakes questions.</p>
 </div>
 <div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-icons-round text-red-500">close</span>
-<h3 class="font-bold">Repetitive Questions</h3>
+<div class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mb-4">
+<span class="material-icons-round text-purple-600 dark:text-purple-400 text-2xl">manage_search</span>
 </div>
-<p class="text-sm text-muted-light dark:text-muted-dark">Same FAQ questions consuming hours of support time</p>
+<h3 class="font-bold text-lg mb-2">Vector Search for Long Tail</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Vector search handles the long tail of general questions without manual rule-writing for every edge case.</p>
 </div>
 </div>
 </section>
@@ -240,8 +263,19 @@ Messages flow through intent classification, context retrieval via RAG, and a sa
 <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
 <span class="material-icons-round text-primary">escalator_warning</span>
 </div>
-<h2 class="text-2xl font-bold">Escalation System</h2>
+<h2 class="text-2xl font-bold">Why These 7 Escalation Triggers</h2>
 </div>
+
+<!-- Why Explanation -->
+<div class="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-2xl border border-amber-200 dark:border-amber-800 mb-6">
+<div class="flex items-start gap-3">
+<span class="material-icons-round text-amber-600 dark:text-amber-400 mt-0.5">lightbulb</span>
+<div>
+<p class="text-sm text-muted-light dark:text-muted-dark"><strong class="text-text-light dark:text-text-dark">Each trigger was chosen based on research into where AI chatbots typically fail or frustrate users.</strong> The system is designed to let AI handle volume while protecting high-value or high-risk interactions for humans.</p>
+</div>
+</div>
+</div>
+
 <div class="bg-card-light dark:bg-card-dark p-6 md:p-8 rounded-DEFAULT border border-gray-100 dark:border-gray-800 mb-6">
 <div class="mb-6 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
 <img src="../images/ai-support-flow-escalation.png" alt="Escalation workflow showing trigger detection and Discord thread creation" class="w-full">
@@ -251,51 +285,51 @@ Escalation workflow: Trigger detection → Discord thread creation → Agent rou
 </p>
 </div>
 
-<!-- Priority Table -->
+<!-- Priority Table with WHY -->
 <div class="bg-card-light dark:bg-card-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden">
 <table class="w-full">
 <thead class="bg-gray-50 dark:bg-gray-800/50">
 <tr>
 <th class="px-6 py-4 text-left text-sm font-bold">Trigger</th>
+<th class="px-6 py-4 text-left text-sm font-bold">Why This Matters</th>
 <th class="px-6 py-4 text-left text-sm font-bold">Priority</th>
-<th class="px-6 py-4 text-left text-sm font-bold">Team</th>
 </tr>
 </thead>
 <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
 <tr>
-<td class="px-6 py-4 text-sm">B2B/School Inquiry</td>
+<td class="px-6 py-4 text-sm font-medium">B2B/School Inquiry</td>
+<td class="px-6 py-4 text-sm text-muted-light dark:text-muted-dark">B2B deals need human nuance and relationship-building</td>
 <td class="px-6 py-4 text-sm"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-red-500"></span> Urgent</span></td>
-<td class="px-6 py-4 text-sm">Sales</td>
 </tr>
 <tr>
-<td class="px-6 py-4 text-sm">Explicit Human Request</td>
+<td class="px-6 py-4 text-sm font-medium">Explicit Human Request</td>
+<td class="px-6 py-4 text-sm text-muted-light dark:text-muted-dark">Respect user autonomy—if they ask for a human, they get one</td>
 <td class="px-6 py-4 text-sm"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-orange-500"></span> High</span></td>
-<td class="px-6 py-4 text-sm">Support</td>
 </tr>
 <tr>
-<td class="px-6 py-4 text-sm">Refund Request</td>
+<td class="px-6 py-4 text-sm font-medium">Refund Request</td>
+<td class="px-6 py-4 text-sm text-muted-light dark:text-muted-dark">Legal/policy implications AI shouldn't decide</td>
 <td class="px-6 py-4 text-sm"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-orange-500"></span> High</span></td>
-<td class="px-6 py-4 text-sm">Support</td>
 </tr>
 <tr>
-<td class="px-6 py-4 text-sm">Negative Sentiment</td>
+<td class="px-6 py-4 text-sm font-medium">Negative Sentiment</td>
+<td class="px-6 py-4 text-sm text-muted-light dark:text-muted-dark">Frustration can escalate if mishandled by AI</td>
 <td class="px-6 py-4 text-sm"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-orange-500"></span> High</span></td>
-<td class="px-6 py-4 text-sm">Support</td>
 </tr>
 <tr>
-<td class="px-6 py-4 text-sm">Qualified Lead Closing</td>
+<td class="px-6 py-4 text-sm font-medium">Qualified Lead Closing</td>
+<td class="px-6 py-4 text-sm text-muted-light dark:text-muted-dark">Human touch closes deals; AI qualifies them</td>
 <td class="px-6 py-4 text-sm"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-orange-500"></span> High</span></td>
-<td class="px-6 py-4 text-sm">Sales</td>
 </tr>
 <tr>
-<td class="px-6 py-4 text-sm">Loop Detection</td>
+<td class="px-6 py-4 text-sm font-medium">Loop Detection</td>
+<td class="px-6 py-4 text-sm text-muted-light dark:text-muted-dark">User stuck in repetitive answers needs real help</td>
 <td class="px-6 py-4 text-sm"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-yellow-500"></span> Medium</span></td>
-<td class="px-6 py-4 text-sm">Support</td>
 </tr>
 <tr>
-<td class="px-6 py-4 text-sm">Low AI Confidence</td>
+<td class="px-6 py-4 text-sm font-medium">Low AI Confidence</td>
+<td class="px-6 py-4 text-sm text-muted-light dark:text-muted-dark">Better to admit limits than give bad answers</td>
 <td class="px-6 py-4 text-sm"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-green-500"></span> Low</span></td>
-<td class="px-6 py-4 text-sm">Support</td>
 </tr>
 </tbody>
 </table>
