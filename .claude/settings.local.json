@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/jknguyen-portfolio -name package.json -o -name tsconfig.json -o -name next.config.*)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --turbopack --no-git --yes)",
+      "Bash(mv _backup/ /tmp/_portfolio_backup)",
+      "Bash(mv _old_site/ /tmp/_portfolio_old_site)",
+      "Bash(npm install:*)",
+      "Bash(cp -r /tmp/_portfolio_old_site/images /c/jknguyen-portfolio/public/images)",
+      "Bash(cp /tmp/_portfolio_old_site/photo.JPEG /c/jknguyen-portfolio/public/photo.JPEG)",
+      "Bash(cp /tmp/_portfolio_old_site/ndkn_resume_APM.pdf /c/jknguyen-portfolio/public/ndkn_resume_APM.pdf)",
+      "Bash(npx shadcn@latest init -d --yes)"
+    ]
+  }
+}
