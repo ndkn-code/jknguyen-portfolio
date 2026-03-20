@@ -21,7 +21,7 @@ const featureGroups = [
         icon: "🧠",
         title: "AI Debate Analysis",
         description:
-          "Gemini 2.5 Flash scores debates across 12 sub-categories with detailed written feedback and improvement suggestions.",
+          "Gemini 3.1 Lite Flash scores debates across 12 sub-categories with detailed written feedback and improvement suggestions.",
       },
       {
         icon: "🔊",
