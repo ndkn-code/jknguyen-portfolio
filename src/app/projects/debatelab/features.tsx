@@ -99,19 +99,19 @@ const featureGroups = [
 
 export default function FeaturesSection() {
   return (
-    <section className="py-32 px-8 bg-background">
+    <section className="py-16 sm:py-32 px-4 sm:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
         <FadeUp>
           <h2 className="text-3xl font-bold mb-4 text-center">
             Everything I Built
           </h2>
-          <p className="text-muted-foreground text-center mb-20 max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-center mb-12 sm:mb-20 max-w-2xl mx-auto">
             From real-time speech processing to gamification, every feature
             was designed, built, and shipped by me.
           </p>
         </FadeUp>
 
-        <div className="space-y-20">
+        <div className="space-y-12 sm:space-y-20">
           {featureGroups.map((group, gi) => (
             <div key={gi}>
               <FadeUp>

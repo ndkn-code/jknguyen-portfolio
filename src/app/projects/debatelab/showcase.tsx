@@ -32,19 +32,19 @@ const features = [
 
 export default function ShowcaseSection() {
   return (
-    <section className="py-32 px-8 bg-muted/30">
+    <section className="py-16 sm:py-32 px-4 sm:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <FadeUp>
           <h2 className="text-3xl font-bold mb-4 text-center">
             Product Showcase
           </h2>
-          <p className="text-muted-foreground text-center mb-20 max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-center mb-12 sm:mb-20 max-w-2xl mx-auto">
             Three core experiences that make DebateLab a complete debate
             training platform.
           </p>
         </FadeUp>
 
-        <div className="space-y-32">
+        <div className="space-y-16 sm:space-y-32">
           {features.map((feature, i) => {
             const isReversed = i % 2 === 1;
             return (

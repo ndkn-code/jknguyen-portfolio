@@ -34,7 +34,7 @@ const painPoints = [
 
 export default function ProblemSection() {
   return (
-    <section id="problem" className="py-32 px-8 bg-background">
+    <section id="problem" className="py-16 sm:py-32 px-4 sm:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
         {/* Full-width statement */}
         <FadeUp>

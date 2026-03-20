@@ -27,7 +27,7 @@ const painPoints = [
 
 export default function ProblemSection() {
   return (
-    <section id="problem" className="py-32 px-8 bg-muted/30">
+    <section id="problem" className="py-16 sm:py-32 px-4 sm:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         {/* Numbered pain points - vertical layout, different from AI Support's grid */}
         <FadeUp>

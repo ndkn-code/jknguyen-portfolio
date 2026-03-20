@@ -130,10 +130,10 @@ function ChatBubble({ message }: { message: Message }) {
 
 export default function WhySection() {
   return (
-    <section id="why" className="py-32 px-8 bg-background">
+    <section id="why" className="py-16 sm:py-32 px-4 sm:px-8 bg-background">
       <div className="max-w-3xl mx-auto">
         <FadeUp>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
             Why I built this.
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed mb-16">

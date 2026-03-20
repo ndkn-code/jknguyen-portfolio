@@ -19,7 +19,7 @@ const techStack = [
 
 export default function HeroSection() {
   return (
-    <header className="relative w-full min-h-[90vh] flex flex-col items-center justify-center px-8 overflow-hidden py-24">
+    <header className="relative w-full min-h-[90vh] flex flex-col items-center justify-center px-4 sm:px-8 overflow-hidden py-16 sm:py-24">
       {/* Gradient background instead of dots - unique to this page */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-violet-500/5" />
@@ -48,7 +48,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[1.05] mb-8 tracking-tight"
+          className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[1.05] mb-6 sm:mb-8 tracking-tight"
         >
           DebateLab:{" "}
           <span className="bg-gradient-to-r from-primary to-violet-500 bg-clip-text text-transparent">
@@ -60,7 +60,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-10"
+          className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8 sm:mb-10"
         >
           A full-stack edtech platform where Vietnamese high school students
           practice debate in English. Real-time speech transcription, AI-powered

@@ -60,7 +60,7 @@ const dbTables = [
 
 export default function ArchitectureSection() {
   return (
-    <section className="py-32 px-8 bg-zinc-900 dark:bg-zinc-950 text-zinc-100">
+    <section className="py-16 sm:py-32 px-4 sm:px-8 bg-zinc-900 dark:bg-zinc-950 text-zinc-100">
       <div className="max-w-7xl mx-auto">
         <FadeUp>
           <h2 className="text-3xl font-bold mb-4 text-center">
@@ -113,7 +113,7 @@ export default function ArchitectureSection() {
 
         {/* Database schema mini-view */}
         <FadeUp delay={0.2}>
-          <div className="bg-zinc-800/50 rounded-xl p-8 border border-zinc-700">
+          <div className="bg-zinc-800/50 rounded-xl p-4 sm:p-8 border border-zinc-700">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-xl">🗄️</span>
               <h3 className="font-bold text-lg text-zinc-200">
@@ -125,7 +125,7 @@ export default function ArchitectureSection() {
             </div>
 
             {/* Code-style table list */}
-            <div className="bg-zinc-900/80 rounded-lg p-6 font-mono text-sm overflow-x-auto border border-zinc-700/50">
+            <div className="bg-zinc-900/80 rounded-lg p-4 sm:p-6 font-mono text-xs sm:text-sm overflow-x-auto border border-zinc-700/50">
               <div className="flex gap-2 mb-4">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500/50" />
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/50" />

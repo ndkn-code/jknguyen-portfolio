@@ -15,7 +15,7 @@ const escalationTriggers = [
 
 export default function EscalationSection() {
   return (
-    <section className="py-32 px-8 bg-zinc-900 dark:bg-zinc-950 text-zinc-100">
+    <section className="py-16 sm:py-32 px-4 sm:px-8 bg-zinc-900 dark:bg-zinc-950 text-zinc-100">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-16">
           {/* Left column - Escalation workflow image + description */}

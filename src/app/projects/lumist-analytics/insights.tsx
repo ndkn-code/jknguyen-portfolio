@@ -103,7 +103,7 @@ const allModules = [
 
 export default function InsightsSection() {
   return (
-    <section className="py-32 px-8 bg-muted/30">
+    <section className="py-16 sm:py-32 px-4 sm:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto space-y-32">
         {/* User Insights */}
         <div className="flex flex-col md:flex-row-reverse gap-16 items-center">

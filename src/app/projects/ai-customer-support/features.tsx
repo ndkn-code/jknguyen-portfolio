@@ -60,7 +60,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="py-32 px-8 bg-background">
+    <section className="py-16 sm:py-32 px-4 sm:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
         <FadeUp>
           <div className="max-w-3xl mx-auto text-center mb-16">

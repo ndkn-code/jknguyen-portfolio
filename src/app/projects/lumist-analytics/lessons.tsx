@@ -10,7 +10,7 @@ import {
 
 export default function LessonsSection() {
   return (
-    <section className="py-32 px-8 bg-background">
+    <section className="py-16 sm:py-32 px-4 sm:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
         <FadeUp>
           <h2 className="text-3xl font-bold mb-16 text-center">

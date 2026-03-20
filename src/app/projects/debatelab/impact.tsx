@@ -28,7 +28,7 @@ const stats = [
 
 export default function ImpactSection() {
   return (
-    <section className="py-32 px-8 bg-muted/30 text-center">
+    <section className="py-16 sm:py-32 px-4 sm:px-8 bg-muted/30 text-center">
       <div className="max-w-5xl mx-auto">
         <FadeUp>
           <h2 className="text-4xl font-bold mb-16">By the Numbers</h2>
@@ -54,7 +54,7 @@ export default function ImpactSection() {
         </div>
 
         <FadeUp delay={0.3}>
-          <div className="bg-white dark:bg-card p-8 md:p-12 rounded-xl border border-border mb-12 text-left max-w-3xl mx-auto">
+          <div className="bg-white dark:bg-card p-5 sm:p-8 md:p-12 rounded-xl border border-border mb-12 text-left max-w-3xl mx-auto">
             <h3 className="font-bold text-xl mb-6">What makes this project different</h3>
             <div className="space-y-4">
               {[

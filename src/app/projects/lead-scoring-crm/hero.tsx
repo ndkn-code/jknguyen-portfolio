@@ -24,7 +24,7 @@ export default function HeroSection() {
   const totalScore = Object.values(scoringExample).reduce((sum, f) => sum + f.points, 0) + 10; // +10 base
 
   return (
-    <header className="relative w-full min-h-[85vh] flex flex-col items-center justify-center px-8 overflow-hidden py-24">
+    <header className="relative w-full min-h-[85vh] flex flex-col items-center justify-center px-4 sm:px-8 overflow-hidden py-16 sm:py-24">
       {/* Subtle grid background */}
       <div
         className="absolute inset-0 -z-10 opacity-30"
@@ -41,7 +41,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold text-foreground leading-[1.1] mb-8 tracking-tight"
+            className="text-3xl sm:text-5xl md:text-7xl font-bold text-foreground leading-[1.1] mb-6 sm:mb-8 tracking-tight"
           >
             Lead Scoring CRM:{" "}
             <span className="text-primary">
