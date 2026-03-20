@@ -29,7 +29,7 @@ const layers = [
   {
     layer: "AI & Speech",
     items: [
-      { name: "Gemini 2.5 Flash", detail: "Debate analysis & scoring" },
+      { name: "Gemini 3.1 Lite Flash", detail: "Debate analysis & scoring" },
       { name: "Groq (Llama 3.3 70B)", detail: "AI coach with streaming" },
       { name: "Deepgram Nova-3", detail: "Real-time STT via WebSocket" },
       { name: "Deepgram Aura", detail: "TTS for AI rebuttals" },

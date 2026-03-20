@@ -14,9 +14,9 @@ const features = [
   },
   {
     title: "AI Feedback & Scoring",
-    subtitle: "Gemini-powered debate analysis",
+    subtitle: "AI-powered debate analysis",
     description:
-      "After each session, Gemini 2.5 Flash analyzes the transcript across 4 categories: Content and Argumentation (40 pts), Structure and Organization (25 pts), Language and Delivery (25 pts), and Persuasiveness (10 pts). Students get a total score with an animated progress ring, detailed sub-scores, and written feedback.",
+      "After each session, Gemini 3.1 Lite Flash analyzes the transcript across 4 categories: Content and Argumentation (40 pts), Structure and Organization (25 pts), Language and Delivery (25 pts), and Persuasiveness (10 pts). Students get a total score with an animated progress ring, detailed sub-scores, and written feedback.",
     image: "/images/debatelab-feedback.jpg",
     imageAlt: "DebateLab feedback page with score ring and category breakdown",
   },
