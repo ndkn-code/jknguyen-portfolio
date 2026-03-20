@@ -36,11 +36,12 @@ export default function ProcessAndLocation() {
     <section className="flex flex-col lg:flex-row gap-6 mt-6">
       {/* PM Process */}
       <FadeUp className="lg:flex-grow">
-        <div className="bg-card p-8 rounded-3xl shadow-sm border border-border">
-          <span className="text-xs font-semibold text-muted-foreground uppercase tracking-widest">
+        <div className="relative overflow-hidden bg-card p-8 rounded-3xl shadow-sm border border-border">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.04] via-transparent to-violet-500/[0.04] pointer-events-none" />
+          <span className="relative text-xs font-semibold text-muted-foreground uppercase tracking-widest">
             My PM Process
           </span>
-          <div className="mt-8 mb-8">
+          <div className="relative mt-8 mb-8">
             <motion.div
               key={activeStep}
               initial={{ opacity: 0, y: 10 }}
@@ -55,7 +56,7 @@ export default function ProcessAndLocation() {
               </p>
             </motion.div>
           </div>
-          <div className="w-full bg-muted rounded-full p-1.5 flex items-center justify-between text-xs font-medium relative">
+          <div className="relative w-full bg-muted rounded-full p-1.5 flex items-center justify-between text-xs font-medium relative">
             <motion.div
               className="absolute left-1.5 top-1.5 bottom-1.5 bg-foreground rounded-full shadow-md z-0"
               animate={{
@@ -68,11 +69,11 @@ export default function ProcessAndLocation() {
               <button
                 key={label}
                 onClick={() => setActiveStep(i)}
-                className={`flex-1 py-2 text-center relative z-10 transition-colors ${
+                className={`flex-1 py-2 text-center relative z-10 transition-colors text-[11px] sm:text-xs ${
                   i === activeStep
                     ? "text-background"
                     : "text-muted-foreground hover:text-foreground"
-                } ${i >= 3 ? "hidden sm:block" : ""}`}
+                }`}
               >
                 {label}
               </button>
