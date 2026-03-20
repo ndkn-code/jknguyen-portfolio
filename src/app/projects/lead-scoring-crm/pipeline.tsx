@@ -17,7 +17,7 @@ const outcomes = [
 
 export default function PipelineSection() {
   return (
-    <section className="py-32 px-8 bg-muted/30">
+    <section className="py-16 sm:py-32 px-4 sm:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto space-y-20">
         <FadeUp>
           <h2 className="text-3xl font-bold mb-4 text-center">Sales Pipeline</h2>

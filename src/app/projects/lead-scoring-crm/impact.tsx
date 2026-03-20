@@ -23,7 +23,7 @@ const stats = [
 
 export default function ImpactSection() {
   return (
-    <section className="py-32 px-8 bg-background text-center">
+    <section className="py-16 sm:py-32 px-4 sm:px-8 bg-background text-center">
       <div className="max-w-4xl mx-auto">
         <FadeUp>
           <h2 className="text-4xl font-bold mb-16">The Impact</h2>

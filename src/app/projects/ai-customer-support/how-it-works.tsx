@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="py-32 px-8 bg-muted/30">
+    <section id="how-it-works" className="py-16 sm:py-32 px-4 sm:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto space-y-24">
         {/* Section header */}
         <FadeUp>

@@ -28,7 +28,7 @@ const priorityThresholds = [
 
 export default function ScoringSection() {
   return (
-    <section id="scoring" className="py-32 px-8 bg-background">
+    <section id="scoring" className="py-16 sm:py-32 px-4 sm:px-8 bg-background">
       <div className="max-w-7xl mx-auto space-y-20">
         {/* n8n Workflow Image - Full width */}
         <div>
