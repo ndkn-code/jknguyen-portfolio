@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
 // Project order for navigation
@@ -19,8 +20,7 @@ const projectNames: Record<string, string> = {
 };
 
 function useNextProject() {
-  if (typeof window === "undefined") return null;
-  const current = window.location.pathname;
+  const current = usePathname();
   const idx = projectOrder.indexOf(current);
   if (idx === -1) return null;
   const nextIdx = (idx + 1) % projectOrder.length;
