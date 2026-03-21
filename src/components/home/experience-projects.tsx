@@ -133,8 +133,9 @@ function ProjectCard({
         <Image
           src={project.image}
           alt={project.title}
-          width={800}
-          height={400}
+          width={1920}
+          height={1080}
+          quality={90}
           className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />

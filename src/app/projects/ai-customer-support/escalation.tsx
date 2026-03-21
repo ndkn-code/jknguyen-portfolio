@@ -32,8 +32,9 @@ export default function EscalationSection() {
               <Image
                 src="/images/ai-support-flow-escalation.png"
                 alt="Escalation workflow showing trigger detection and Discord thread creation"
-                width={800}
-                height={400}
+                width={1600}
+                height={800}
+                quality={90}
                 className="w-full h-auto"
               />
             </div>

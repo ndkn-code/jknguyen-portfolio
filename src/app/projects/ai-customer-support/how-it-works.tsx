@@ -56,8 +56,9 @@ export default function HowItWorksSection() {
                     <Image
                       src="/images/ai-conversation-message.png"
                       alt="AI handling a common question automatically"
-                      width={600}
-                      height={400}
+                      width={1200}
+                      height={800}
+                      quality={90}
                       className="w-full h-auto"
                     />
                   </div>
@@ -79,8 +80,9 @@ export default function HowItWorksSection() {
                     <Image
                       src="/images/ai-escalation-message.png"
                       alt="AI handing off to human with context preserved"
-                      width={600}
-                      height={400}
+                      width={1200}
+                      height={800}
+                      quality={90}
                       className="w-full h-auto"
                     />
                   </div>

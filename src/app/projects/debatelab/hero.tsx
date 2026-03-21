@@ -144,8 +144,9 @@ export default function HeroSection() {
           <Image
             src="/images/debatelab-dashboard.png"
             alt="DebateLab dashboard showing weekly activity, streak, XP progress, and recent practice sessions"
-            width={1200}
-            height={700}
+            width={1920}
+            height={1080}
+            quality={95}
             className="w-full h-auto"
             priority
           />

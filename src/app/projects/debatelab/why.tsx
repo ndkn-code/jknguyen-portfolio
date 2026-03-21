@@ -165,9 +165,9 @@ export default function WhySection() {
           {/* Typing indicator on MY side (right) before replying */}
           <TypingIndicator side="right" />
 
-          {/* My replies - appear 2s after typing indicator */}
+          {/* My replies - first appears 2s after typing, second 1s after first */}
           <ChatBubble message={conversation[2]} delayAfterTyping={2} />
-          <ChatBubble message={conversation[3]} delayAfterTyping={2} />
+          <ChatBubble message={conversation[3]} delayAfterTyping={3} />
         </div>
       </div>
     </section>

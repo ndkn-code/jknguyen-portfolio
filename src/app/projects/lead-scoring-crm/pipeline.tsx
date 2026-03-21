@@ -91,8 +91,9 @@ export default function PipelineSection() {
                     <Image
                       src="/images/crm-slack-notification.png"
                       alt="Slack notification showing lead score and priority"
-                      width={600}
-                      height={400}
+                      width={1200}
+                      height={800}
+                      quality={90}
                       className="w-full h-auto"
                     />
                   </div>
@@ -114,8 +115,9 @@ export default function PipelineSection() {
                     <Image
                       src="/images/crm-jira-ticket.png"
                       alt="Jira ticket with full lead details and custom fields"
-                      width={600}
-                      height={400}
+                      width={1200}
+                      height={800}
+                      quality={90}
                       className="w-full h-auto"
                     />
                   </div>
