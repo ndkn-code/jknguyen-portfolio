@@ -142,7 +142,7 @@ export default function HeroSection() {
           </div>
           {/* Screenshot */}
           <Image
-            src="/images/debatelab-dashboard.jpg"
+            src="/images/debatelab-dashboard.png"
             alt="DebateLab dashboard showing weekly activity, streak, XP progress, and recent practice sessions"
             width={1200}
             height={700}
