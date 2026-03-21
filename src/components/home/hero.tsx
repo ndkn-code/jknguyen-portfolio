@@ -46,7 +46,7 @@ export default function HeroHome() {
           <span>Jack Nguyen!</span>
         </div>
         <div className="mt-4">
-          <span className="text-muted-foreground/30">Co-Founder &amp; COO at </span>
+          <span className="text-muted-foreground/30">Co-Founder @ </span>
           <span className="text-primary">Lumist.ai</span>
         </div>
       </motion.h1>
@@ -57,10 +57,10 @@ export default function HeroHome() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10"
       >
-        I build AI-powered products that solve real problems. As co-founder of
-        an EdTech startup, I&apos;ve shipped an MVP to 1,500+ users, led a
-        cross-functional team of 14, and validated product-market fit in
-        Vietnam&apos;s SAT prep market.
+        Product-minded builder turning 0-to-1 startup experience into a PM
+        career. I&apos;ve owned the full product lifecycle, from user research
+        and roadmap prioritization to shipping an MVP that reached 1,500+
+        users across Vietnam.
       </motion.p>
 
       <motion.div

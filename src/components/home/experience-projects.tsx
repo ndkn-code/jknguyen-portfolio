@@ -8,7 +8,7 @@ import { FadeUp } from "@/components/animations/motion";
 
 const experiences = [
   {
-    title: "Co-Founder & COO at Lumist.ai",
+    title: "Co-Founder at Lumist.ai",
     period: "Jan 2024 - Present · Remote · Full time",
     active: true,
   },
