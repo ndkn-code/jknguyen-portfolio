@@ -50,7 +50,7 @@ const allProjects: Project[] = [
     description:
       "AI-powered solo debate practice platform. Real-time speech transcription, Gemini-powered scoring, streaming AI coach, gamification, and full Vietnamese localization.",
     tech: ["Next.js", "Gemini AI", "Deepgram", "Supabase", "Groq"],
-    image: "/images/debatelab-dashboard.jpg",
+    image: "/images/debatelab-dashboard.png",
   },
   {
     href: "/projects/lumist-analytics",
