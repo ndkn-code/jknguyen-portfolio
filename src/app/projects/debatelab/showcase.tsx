@@ -124,8 +124,9 @@ function BrowserFrame({
       <Image
         src={feature.image}
         alt={feature.imageAlt}
-        width={900}
-        height={550}
+        width={1920}
+        height={1080}
+        quality={90}
         className="w-full h-auto"
       />
     </div>
