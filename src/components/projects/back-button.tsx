@@ -9,6 +9,7 @@ const projectOrder = [
   "/projects/debatelab",
   "/projects/lumist-analytics",
   "/projects/ai-customer-support",
+  "/projects/nemoclaw",
   "/projects/lead-scoring-crm",
 ];
 
@@ -16,6 +17,7 @@ const projectNames: Record<string, string> = {
   "/projects/debatelab": "DebateLab",
   "/projects/lumist-analytics": "Lumist Analytics",
   "/projects/ai-customer-support": "AI Support",
+  "/projects/nemoclaw": "Lumi",
   "/projects/lead-scoring-crm": "Lead Scoring",
 };
 

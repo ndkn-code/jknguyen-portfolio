@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <rect width="1920" height="1080" fill="#0F172A"/>
+
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#334155" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+
+  <!-- Telegram-style chat window -->
+  <rect x="560" y="120" width="800" height="840" rx="24" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+
+  <!-- Chat header (Telegram blue) -->
+  <rect x="560" y="120" width="800" height="80" rx="24" fill="#2AABEE"/>
+  <rect x="560" y="176" width="800" height="24" fill="#2AABEE"/>
+
+  <!-- Bot avatar -->
+  <circle cx="620" cy="160" r="24" fill="rgba(255,255,255,0.2)"/>
+  <text x="620" y="168" text-anchor="middle" font-size="24">🤖</text>
+
+  <!-- Bot name -->
+  <text x="660" y="152" fill="white" font-family="system-ui" font-size="18" font-weight="bold">Lumi the Secretary</text>
+  <text x="660" y="172" fill="rgba(255,255,255,0.6)" font-family="system-ui" font-size="13">online · Lumist AI Assistant</text>
+
+  <!-- Online dot -->
+  <circle cx="1320" cy="160" r="6" fill="#34D399"/>
+
+  <!-- User message bubble -->
+  <rect x="900" y="240" width="420" height="50" rx="20" fill="#EFFDDE"/>
+  <text x="920" y="272" fill="#1E293B" font-family="system-ui" font-size="16">How many signups today?</text>
+
+  <!-- Bot response -->
+  <rect x="600" y="320" width="460" height="120" rx="20" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="624" y="352" fill="#06B6D4" font-family="system-ui" font-size="16" font-weight="bold">📊 Signups Today: 23</text>
+  <text x="624" y="380" fill="#94A3B8" font-family="system-ui" font-size="14">vs Yesterday: +4 (↑ 21%)</text>
+  <text x="624" y="404" fill="#94A3B8" font-family="system-ui" font-size="14">Top Source: Organic Search (14)</text>
+  <text x="624" y="428" fill="#94A3B8" font-family="system-ui" font-size="14">Week total: 142 (↑ 18% WoW)</text>
+
+  <!-- Second user message -->
+  <rect x="820" y="480" width="500" height="50" rx="20" fill="#EFFDDE"/>
+  <text x="840" y="512" fill="#1E293B" font-family="system-ui" font-size="16">/blog SAT Math Tips for Beginners</text>
+
+  <!-- Blog response -->
+  <rect x="600" y="560" width="500" height="110" rx="20" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="624" y="592" fill="#F59E0B" font-family="system-ui" font-size="16" font-weight="bold">✍️ Blog Published as Draft</text>
+  <text x="624" y="618" fill="#94A3B8" font-family="system-ui" font-size="14">"Top 7 SAT Math Strategies"</text>
+  <text x="624" y="644" fill="#94A3B8" font-family="system-ui" font-size="14">5 sections · 1,820 words · EN/VI</text>
+  <text x="624" y="660" fill="#64748B" font-family="system-ui" font-size="12">via lumist-blog + obsidian-vault</text>
+
+  <!-- Security pill -->
+  <rect x="760" y="720" width="400" height="48" rx="24" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="800" y="750" fill="#34D399" font-family="system-ui" font-size="14" font-weight="bold">🛡️ Deny-by-Default Sandbox · 8 Endpoints</text>
+
+  <!-- Vault brain indicator -->
+  <rect x="760" y="790" width="400" height="48" rx="24" fill="#1E293B" stroke="#F59E0B" stroke-width="1" opacity="0.6"/>
+  <text x="800" y="820" fill="#F59E0B" font-family="system-ui" font-size="14" font-weight="bold">🧠 Obsidian Vault · 14 MCP Tools</text>
+</svg>

@@ -75,6 +75,17 @@ const allProjects: Project[] = [
     image: "/images/ai-conversation-message.png",
   },
   {
+    href: "/projects/nemoclaw",
+    badge: "AI Agent",
+    badgeColor:
+      "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
+    title: "Lumi the Secretary",
+    description:
+      "Internal AI agent with an Obsidian vault brain, answering business questions from 5 data sources, generating blog content, with deny-by-default security.",
+    tech: ["OpenClaw", "NemoClaw", "Gemini AI", "Obsidian MCP", "Telegram"],
+    image: "/images/nemoclaw-hero.svg",
+  },
+  {
     href: "/projects/lead-scoring-crm",
     badge: "Automation",
     badgeColor:
