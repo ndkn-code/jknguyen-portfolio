@@ -1,7 +1,7 @@
 import Footer from "@/components/footer";
 import HeroHome from "@/components/home/hero";
 import ExperienceAndProjects from "@/components/home/experience-projects";
-import ProcessAndLocation from "@/components/home/process-location";
+import WhyPMAndConnect from "@/components/home/process-location";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         />
         <HeroHome />
         <ExperienceAndProjects />
-        <ProcessAndLocation />
+        <WhyPMAndConnect />
       </main>
       <Footer />
     </>

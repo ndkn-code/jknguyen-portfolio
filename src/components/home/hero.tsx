@@ -23,7 +23,7 @@ export default function HeroHome() {
         className="inline-flex items-center mb-6 px-4 py-2 bg-card border border-border rounded-full text-sm font-semibold shadow-sm"
       >
         <span className="w-2.5 h-2.5 rounded-full bg-green-500 mr-2 animate-pulse" />
-        Open to PM internship opportunities for Summer 2026
+        Open to APM / entry-level PM opportunities
       </motion.div>
 
       <motion.h1
