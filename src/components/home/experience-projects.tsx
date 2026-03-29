@@ -256,7 +256,7 @@ export default function ExperienceAndProjects() {
               <div className="mt-8 pt-6 border-t border-border">
                 <a
                   className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
-                  href="/ndkn_resume_APM.pdf"
+                  href="/jack_nguyen_pm.pdf"
                   target="_blank"
                 >
                   View Full Resume →
