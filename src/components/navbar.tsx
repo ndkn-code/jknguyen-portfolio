@@ -12,7 +12,7 @@ export default function Navbar() {
     { href: "/", label: "Work", active: true },
     { href: "/#about", label: "About" },
     { href: "mailto:ndkn.work@gmail.com", label: "Contact" },
-    { href: "/ndkn_resume_APM.pdf", label: "Resume", external: true },
+    { href: "/jack_nguyen_pm.pdf", label: "Resume", external: true },
   ];
 
   return (

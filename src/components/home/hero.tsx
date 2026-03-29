@@ -70,7 +70,7 @@ export default function HeroHome() {
         className="flex flex-col sm:flex-row items-center gap-4"
       >
         <a
-          href="/ndkn_resume_APM.pdf"
+          href="/jack_nguyen_pm.pdf"
           target="_blank"
           className="bg-foreground text-background px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-opacity shadow-lg min-w-[180px] text-center"
         >
