@@ -10,21 +10,25 @@ const experiences = [
   {
     title: "Co-Founder at Lumist.ai",
     period: "Jan 2024 - Present · Remote · Full time",
+    description: "Owned product strategy, user research, and roadmap for AI education platform serving 1,500+ users.",
     active: true,
   },
   {
     title: "ERP Analyst I at USF IT",
     period: "Jan 2025 - Dec 2025 · Tampa · Full time",
+    description: "Product-owned enterprise system rollout; gathered requirements, coordinated training, delivered automated reporting.",
     active: false,
   },
   {
     title: "Data Analytics Intern at VNG Corporation",
     period: "Jun 2024 - Aug 2024 · Ho Chi Minh City · Internship",
+    description: "Built revenue forecasting model that reduced variance from 20% to 4% for a $2M game launch.",
     active: false,
   },
   {
     title: "Risk Advisory Intern at Deloitte Vietnam",
     period: "May 2023 - Jul 2023 · Hanoi · Internship",
+    description: "Built compliance dashboards enabling client leadership to track audit status in real time.",
     active: false,
   },
 ];
@@ -48,7 +52,7 @@ const allProjects: Project[] = [
       "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary",
     title: "DebateLab",
     description:
-      "AI-powered solo debate practice platform. Real-time speech transcription, Gemini-powered scoring, streaming AI coach, gamification, and full Vietnamese localization.",
+      "English speaking practice platform for Vietnamese students. Built for family members who found existing apps too passive \u2014 designed debate-format learning that drove repeat engagement through gamification.",
     tech: ["Next.js", "Gemini AI", "Deepgram", "Supabase", "Groq"],
     image: "/images/debatelab-dashboard.png",
   },
@@ -59,7 +63,7 @@ const allProjects: Project[] = [
       "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
     title: "Lumist Analytics Dashboard",
     description:
-      "Full-stack analytics platform tracking DAU, retention cohorts, acquisition funnels, and feature adoption.",
+      "Lumist had 1,500+ users but no visibility into behavior. Built a dashboard tracking DAU, retention, and funnels that directly surfaced the AI Tutor adoption problem.",
     tech: ["React", "Supabase", "Recharts", "TypeScript"],
     image: "/images/lumist-analytics-hero.svg",
   },
@@ -70,7 +74,7 @@ const allProjects: Project[] = [
       "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400",
     title: "AI Customer Support System",
     description:
-      "Multi-platform RAG chatbot with sales funnel tracking, intent classification, and 7-trigger escalation.",
+      "Support messages were overwhelming a 2-person team at 1,500+ users. Deployed a chatbot that auto-resolves common queries and escalates edge cases to humans.",
     tech: ["n8n", "Gemini AI", "Supabase Vector", "Zalo API"],
     image: "/images/ai-conversation-message.png",
   },
@@ -81,7 +85,7 @@ const allProjects: Project[] = [
       "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
     title: "Lumi the Secretary",
     description:
-      "Internal AI agent with an Obsidian vault brain, answering business questions from 5 data sources, generating blog content, with deny-by-default security.",
+      "Team spent hours digging through 5 different tools for answers. Built an internal AI agent that queries all data sources and generates reports on demand via Telegram.",
     tech: ["OpenClaw", "NemoClaw", "Gemini AI", "Obsidian MCP", "Telegram"],
     image: "/images/nemoclaw-hero.svg",
   },
@@ -92,7 +96,7 @@ const allProjects: Project[] = [
       "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
     title: "Lead Scoring CRM",
     description:
-      "Automated lead scoring pipeline with Jira integration, multi-factor algorithm, and team accountability.",
+      "Sales team had no way to prioritize 1,000+ inbound leads. Built a scoring system with automated Jira routing that eliminated manual triage.",
     tech: ["n8n", "Jira", "Google Sheets", "Slack"],
     image: "/images/crm-n8n-flow.png",
   },
@@ -103,7 +107,7 @@ const allProjects: Project[] = [
       "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
     title: "Class Feedback Pipeline",
     description:
-      "Automated student feedback from Zoom polls to n8n to Google Sheets to Looker dashboard.",
+      "Instructors lacked timely feedback on student engagement. Automated a pipeline from Zoom polls to a live Looker dashboard.",
     tech: ["n8n", "Zoom API", "Google Sheets", "Looker"],
     image: "/images/crm-n8n-flow.png",
     disabled: true,
@@ -249,6 +253,11 @@ export default function ExperienceAndProjects() {
                       <p className="text-xs text-muted-foreground mt-1.5">
                         {exp.period}
                       </p>
+                      {exp.description && (
+                        <p className="text-xs text-muted-foreground/70 mt-1 leading-relaxed">
+                          {exp.description}
+                        </p>
+                      )}
                     </div>
                   </div>
                 ))}
