@@ -49,7 +49,7 @@ export default function ProblemSection() {
           <div className="lg:col-span-8">
             <FadeRight>
               <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-                Our SAT prep startup was flying blind. We had 1,500+ users but
+                Our SAT prep startup was flying blind. We had 3,000+ users but
                 zero visibility into what was working. Product roadmap decisions
                 were based on anecdotes and assumptions, not data. We were a
                 lean startup that couldn&apos;t validate a single hypothesis.

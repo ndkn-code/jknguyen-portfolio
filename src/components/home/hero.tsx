@@ -59,7 +59,7 @@ export default function HeroHome() {
       >
         Product-minded builder turning 0-to-1 startup experience into a PM
         career. I&apos;ve owned the full product lifecycle, from user research
-        and roadmap prioritization to shipping an MVP that reached 1,500+
+        and roadmap prioritization to shipping an MVP that reached 3,000+
         users across Vietnam.
       </motion.p>
 

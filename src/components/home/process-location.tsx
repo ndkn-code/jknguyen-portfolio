@@ -29,13 +29,13 @@ export default function WhyPMAndConnect() {
                 gravitating toward was discovery and decision-making: talking to
                 users, deciding what to build next, and measuring whether it
                 worked. I&apos;ve owned the full product lifecycle from zero to
-                1,500+ users, and I want to bring that builder&apos;s instinct
+                3,000+ users, and I want to bring that builder&apos;s instinct
                 to a PM role at scale.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed max-w-lg italic">
-                &ldquo;When our AI Tutor stalled at 24 DAU, I ran user
+                &ldquo;When our AI Tutor stalled at 120 MAU, I ran user
                 interviews, identified 3 root causes, redesigned the onboarding
-                &mdash; and grew usage to 150+. That loop is what I
+                &mdash; and grew usage to 680+. That loop is what I
                 love.&rdquo;
               </p>
             </div>
