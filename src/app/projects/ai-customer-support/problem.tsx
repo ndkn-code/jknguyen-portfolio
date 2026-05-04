@@ -18,7 +18,7 @@ const painPoints = [
   {
     icon: "🔧",
     title: "Manual Triage",
-    description: "Team manually routing every message at 1,500+ users.",
+    description: "Team manually routing every message at 3,000+ users.",
   },
   {
     icon: "📉",
@@ -43,7 +43,7 @@ export default function ProblemSection() {
               Our support team was drowning.
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              With 1,500+ users across two platforms, every message was manually
+              With 3,000+ users across two platforms, every message was manually
               read, categorized, and routed. High-value sales leads got the same
               treatment as simple FAQ questions. We needed a system that could
               think, not just respond.

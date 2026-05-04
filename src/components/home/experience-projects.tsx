@@ -10,25 +10,25 @@ const experiences = [
   {
     title: "Co-Founder at Lumist.ai",
     period: "Jan 2024 - Present · Remote · Full time",
-    description: "Owned product strategy, user research, and roadmap for AI education platform serving 1,500+ users.",
+    description: "",
     active: true,
   },
   {
     title: "ERP Analyst I at USF IT",
     period: "Jan 2025 - Dec 2025 · Tampa · Full time",
-    description: "Product-owned enterprise system rollout; gathered requirements, coordinated training, delivered automated reporting.",
+    description: "",
     active: false,
   },
   {
-    title: "Data Analytics Intern at VNG Corporation",
+    title: "Product Management Intern at VNG Corporation",
     period: "Jun 2024 - Aug 2024 · Ho Chi Minh City · Internship",
-    description: "Built revenue forecasting model that reduced variance from 20% to 4% for a $2M game launch.",
+    description: "",
     active: false,
   },
   {
     title: "Risk Advisory Intern at Deloitte Vietnam",
     period: "May 2023 - Jul 2023 · Hanoi · Internship",
-    description: "Built compliance dashboards enabling client leadership to track audit status in real time.",
+    description: "",
     active: false,
   },
 ];
@@ -63,7 +63,7 @@ const allProjects: Project[] = [
       "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
     title: "Lumist Analytics Dashboard",
     description:
-      "Lumist had 1,500+ users but no visibility into behavior. Built a dashboard tracking DAU, retention, and funnels that directly surfaced the AI Tutor adoption problem.",
+      "Lumist had 3,000+ users but no visibility into behavior. Built a dashboard tracking DAU, retention, and funnels that directly surfaced the AI Tutor adoption problem.",
     tech: ["React", "Supabase", "Recharts", "TypeScript"],
     image: "/images/lumist-analytics-hero.svg",
   },
@@ -74,7 +74,7 @@ const allProjects: Project[] = [
       "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400",
     title: "AI Customer Support System",
     description:
-      "Support messages were overwhelming a 2-person team at 1,500+ users. Deployed a chatbot that auto-resolves common queries and escalates edge cases to humans.",
+      "Support messages were overwhelming a 2-person team at 3,000+ users. Deployed a chatbot that auto-resolves common queries and escalates edge cases to humans.",
     tech: ["n8n", "Gemini AI", "Supabase Vector", "Zalo API"],
     image: "/images/ai-conversation-message.png",
   },
