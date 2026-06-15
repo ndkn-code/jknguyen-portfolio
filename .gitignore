@@ -24,6 +24,16 @@
 .DS_Store
 *.pem
 
+# private planning docs (career strategy — never publish)
+/docs/
+
+# private resume tooling — lives in ~/.claude/skills, never publish
+/.claude/skills/resume-tailor/
+/public/resume-tailor.skill
+
+# local Claude Code settings — machine-specific, leaks job targets; never publish
+/.claude/settings.local.json
+
 # debug
 npm-debug.log*
 yarn-debug.log*
