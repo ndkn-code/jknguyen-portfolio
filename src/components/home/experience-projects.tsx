@@ -83,6 +83,18 @@ const allProjects: Project[] = [
     image: "/images/lumist-growth/01_channel_volume_vs_value.png",
   },
   {
+    href: "/projects/revenue-forecasting",
+    categories: ["Data"],
+    badge: "ML",
+    badgeColor:
+      "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400",
+    title: "Revenue Forecasting",
+    description:
+      "Forecasting a mobile-game launch's daily revenue — cutting forecast error from ~22% to ~4.5% with a gradient-boosting model and walk-forward backtesting. Recreates my VNG work.",
+    tech: ["Python", "scikit-learn", "pandas"],
+    image: "/images/revenue-forecasting/02_backtest_forecast.png",
+  },
+  {
     href: "/projects/lumist-analytics",
     categories: ["Data", "Product"],
     badge: "Launched",
