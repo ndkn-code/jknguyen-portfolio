@@ -26,7 +26,6 @@ const SKILLS = [
   "Segmentation",
   "Python (pandas, matplotlib)",
   "Tableau",
-  "Power BI",
   "Data storytelling",
   "Stakeholder recommendations",
 ];

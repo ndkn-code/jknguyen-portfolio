@@ -9,7 +9,7 @@ const KPIS = [
   { value: "12 mo", label: "Of activity" },
 ];
 
-const STACK = ["SQL", "Python · pandas", "SQLite", "Tableau", "Power BI"];
+const STACK = ["SQL", "Python · pandas", "SQLite", "Tableau"];
 
 export default function HeroSection() {
   return (
