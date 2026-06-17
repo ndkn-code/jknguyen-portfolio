@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Jack Nguyen - PM Portfolio",
+  title: "Jack Nguyen — Product & Data",
   description:
-    "Co-Founder & COO at Lumist.ai — I build AI-powered products that solve real problems.",
+    "Co-Founder at Lumist.ai. Analytics-driven product builder — I turn data into decisions and ship AI-powered products that reached 3,000+ users.",
 };
 
 export default function RootLayout({

@@ -35,6 +35,7 @@ const experiences = [
 
 interface Project {
   href: string;
+  categories: string[];
   badge: string;
   badgeColor: string;
   title: string;
@@ -47,6 +48,7 @@ interface Project {
 const allProjects: Project[] = [
   {
     href: "/projects/debatelab",
+    categories: ["Product", "AI"],
     badge: "Flagship",
     badgeColor:
       "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary",
@@ -58,6 +60,7 @@ const allProjects: Project[] = [
   },
   {
     href: "/projects/lumist-analytics",
+    categories: ["Data", "Product"],
     badge: "Launched",
     badgeColor:
       "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
@@ -69,6 +72,7 @@ const allProjects: Project[] = [
   },
   {
     href: "/projects/ai-customer-support",
+    categories: ["AI", "Data"],
     badge: "Technical",
     badgeColor:
       "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400",
@@ -80,6 +84,7 @@ const allProjects: Project[] = [
   },
   {
     href: "/projects/nemoclaw",
+    categories: ["AI", "Data"],
     badge: "AI Agent",
     badgeColor:
       "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
@@ -91,6 +96,7 @@ const allProjects: Project[] = [
   },
   {
     href: "/projects/lead-scoring-crm",
+    categories: ["Data", "Product"],
     badge: "Automation",
     badgeColor:
       "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
@@ -102,6 +108,7 @@ const allProjects: Project[] = [
   },
   {
     href: "#",
+    categories: ["Data"],
     badge: "Data",
     badgeColor:
       "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
@@ -202,21 +209,35 @@ function ProjectCard({
   );
 }
 
+const FILTERS = ["All", "Product", "Data", "AI"] as const;
+type Filter = (typeof FILTERS)[number];
+
 export default function ExperienceAndProjects() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [filter, setFilter] = useState<Filter>("All");
+
+  const projects =
+    filter === "All"
+      ? allProjects
+      : allProjects.filter((p) => p.categories.includes(filter));
 
   const paginate = useCallback(
     (newDirection: number) => {
       const nextIndex = currentIndex + newDirection;
-      if (nextIndex >= 0 && nextIndex < allProjects.length) {
+      if (nextIndex >= 0 && nextIndex < projects.length) {
         setCurrentIndex(nextIndex);
       }
     },
-    [currentIndex]
+    [currentIndex, projects.length]
   );
 
   const goTo = useCallback((index: number) => {
     setCurrentIndex(index);
+  }, []);
+
+  const selectFilter = useCallback((f: Filter) => {
+    setFilter(f);
+    setCurrentIndex(0);
   }, []);
 
   return (
@@ -286,8 +307,26 @@ export default function ExperienceAndProjects() {
                 Projects
               </span>
               <span className="text-xs text-muted-foreground tabular-nums">
-                {currentIndex + 1} / {allProjects.length}
+                {projects.length === 0 ? 0 : currentIndex + 1} /{" "}
+                {projects.length}
               </span>
+            </div>
+
+            {/* Category filter */}
+            <div className="relative flex flex-wrap items-center gap-2 px-6 pt-4 z-20">
+              {FILTERS.map((f) => (
+                <button
+                  key={f}
+                  onClick={() => selectFilter(f)}
+                  className={`px-3 py-1 rounded-full text-xs font-semibold transition-colors border ${
+                    filter === f
+                      ? "bg-primary text-white border-primary"
+                      : "bg-card text-muted-foreground border-border hover:border-primary/40 hover:text-foreground"
+                  }`}
+                >
+                  {f}
+                </button>
+              ))}
             </div>
 
             {/* Stacked carousel */}
@@ -298,7 +337,7 @@ export default function ExperienceAndProjects() {
                 perspective: "1200px",
               }}
             >
-              {allProjects.map((project, i) => {
+              {projects.map((project, i) => {
                 const offset = i - currentIndex;
                 if (Math.abs(offset) > 2) return null;
                 return (
@@ -336,7 +375,7 @@ export default function ExperienceAndProjects() {
               </button>
 
               <div className="flex items-center gap-1.5">
-                {allProjects.map((_, i) => (
+                {projects.map((_, i) => (
                   <button
                     key={i}
                     onClick={() => goTo(i)}
@@ -351,7 +390,7 @@ export default function ExperienceAndProjects() {
 
               <button
                 onClick={() => paginate(1)}
-                disabled={currentIndex === allProjects.length - 1}
+                disabled={currentIndex === projects.length - 1}
                 className="w-9 h-9 rounded-full border border-border bg-card flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors disabled:opacity-30 disabled:cursor-not-allowed shadow-sm"
               >
                 <svg

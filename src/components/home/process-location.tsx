@@ -21,22 +21,23 @@ export default function WhyPMAndConnect() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.04] via-transparent to-violet-500/[0.04] pointer-events-none" />
           <div className="relative">
             <span className="text-xs font-semibold text-muted-foreground uppercase tracking-widest">
-              Why PM
+              Why Product & Data
             </span>
             <div className="mt-6 space-y-4">
               <p className="text-sm text-foreground leading-relaxed max-w-lg">
                 As a co-founder, I wore every hat &mdash; but the work I kept
                 gravitating toward was discovery and decision-making: talking to
-                users, deciding what to build next, and measuring whether it
-                worked. I&apos;ve owned the full product lifecycle from zero to
-                3,000+ users, and I want to bring that builder&apos;s instinct
-                to a PM role at scale.
+                users, digging through the data to find what mattered, and
+                measuring whether what we shipped worked. I&apos;ve owned the
+                full product lifecycle from zero to 3,000+ users, and I want to
+                bring that analytical, builder&apos;s instinct to a product or
+                data team at scale.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed max-w-lg italic">
-                &ldquo;When our AI Tutor stalled at 120 MAU, I ran user
-                interviews, identified 3 root causes, redesigned the onboarding
-                &mdash; and grew usage to 680+. That loop is what I
-                love.&rdquo;
+                &ldquo;When our AI Tutor stalled at 120 MAU, I dug into the
+                Supabase data and ran user interviews, found 3 root causes,
+                redesigned the onboarding &mdash; and grew usage to 680+. That
+                loop is what I love.&rdquo;
               </p>
             </div>
           </div>

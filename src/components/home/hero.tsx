@@ -23,7 +23,7 @@ export default function HeroHome() {
         className="inline-flex items-center mb-6 px-4 py-2 bg-card border border-border rounded-full text-sm font-semibold shadow-sm"
       >
         <span className="w-2.5 h-2.5 rounded-full bg-green-500 mr-2 animate-pulse" />
-        Open to APM / entry-level PM opportunities
+        Open to Product & Data Analyst roles
       </motion.div>
 
       <motion.h1
@@ -57,10 +57,10 @@ export default function HeroHome() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10"
       >
-        Product-minded builder turning 0-to-1 startup experience into a PM
-        career. I&apos;ve owned the full product lifecycle, from user research
-        and roadmap prioritization to shipping an MVP that reached 3,000+
-        users across Vietnam.
+        Analytics-driven product builder. I&apos;ve owned the full lifecycle
+        &mdash; from SQL-driven analysis and user research to shipping an MVP
+        that reached 3,000+ users across Vietnam &mdash; turning messy data
+        into decisions that move the metrics.
       </motion.p>
 
       <motion.div
