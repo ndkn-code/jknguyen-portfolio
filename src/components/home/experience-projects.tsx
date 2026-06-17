@@ -67,8 +67,20 @@ const allProjects: Project[] = [
     title: "DebateLab Analytics",
     description:
       "An end-to-end DA + BA analysis of DebateLab — what drives skill gains, retention, and free→premium conversion. SQL → Python → Tableau & Power BI.",
-    tech: ["SQL", "Python", "Tableau", "Power BI"],
+    tech: ["SQL", "Python", "Tableau"],
     image: "/images/debatelab-analytics/02_skill_learning_curves.png",
+  },
+  {
+    href: "/projects/lumist-growth",
+    categories: ["Data"],
+    badge: "Data",
+    badgeColor:
+      "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+    title: "Lumist Growth Analytics",
+    description:
+      "Which acquisition channels actually convert, and what turns free students into paying ones — a SQL → Python → Tableau analysis of a 5,500-student SAT-prep platform.",
+    tech: ["SQL", "Python", "Tableau"],
+    image: "/images/lumist-growth/01_channel_volume_vs_value.png",
   },
   {
     href: "/projects/lumist-analytics",
