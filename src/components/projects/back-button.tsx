@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 // Project order for navigation
 const projectOrder = [
   "/projects/debatelab",
+  "/projects/debatelab-analytics",
   "/projects/lumist-analytics",
   "/projects/ai-customer-support",
   "/projects/nemoclaw",
@@ -15,6 +16,7 @@ const projectOrder = [
 
 const projectNames: Record<string, string> = {
   "/projects/debatelab": "DebateLab",
+  "/projects/debatelab-analytics": "DebateLab Analytics",
   "/projects/lumist-analytics": "Lumist Analytics",
   "/projects/ai-customer-support": "AI Support",
   "/projects/nemoclaw": "Lumi",
