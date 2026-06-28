@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import BackButton from "@/components/projects/back-button";
 import HeroSection from "./hero";
 import MethodologySection from "./methodology";
+import CleaningSection from "./cleaning";
 import FindingsSection from "./findings";
 import DashboardsSection from "./dashboards";
 import ImpactSection from "./impact";
@@ -20,6 +21,7 @@ export default function LumistGrowthPage() {
       <main>
         <HeroSection />
         <MethodologySection />
+        <CleaningSection />
         <FindingsSection />
         <DashboardsSection />
         <ImpactSection />
