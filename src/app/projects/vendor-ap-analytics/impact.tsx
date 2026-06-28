@@ -6,43 +6,40 @@ import Callout from "@/components/ui/callout";
 
 const RECOMMENDATIONS = [
   {
-    title: "Engineer the 5-practice habit in week 1",
-    body: "The funnel's biggest leak is activation → habit. A guided onboarding that drives new users to 5 practices (and their first league) in the first week should lift the whole conversion pipeline.",
+    title: "Run a quarterly vendor-master cleanup",
+    body: "561 never-paid active vendors are deactivation candidates, 52 near-duplicate pairs risk double payment, and 118 cross-entity open/closed mismatches are control gaps. A standing hygiene routine shrinks the surface for error and fraud before it reaches a payment run.",
   },
   {
-    title: "Target coaching at rebuttal & logic",
-    body: "These skills improve slowest. Concentrated drills and AI feedback prompts there produce the most visible score movement — the metric learners feel.",
+    title: "Focus sourcing on the concentrated tail",
+    body: "With 80% of AP spend in ~82 vendors and 61% in the top 1%, contract renegotiation and consolidation on that short list moves the number far more than broad, across-the-board cost-cutting.",
   },
   {
-    title: "Cap streak pressure at ~4 sessions/week",
-    body: "Score gains plateau past ~4 sessions/week, so design streaks around a sustainable 4× cadence rather than daily pressure that risks burnout for no extra learning.",
+    title: "Tighten AP controls on timing & duplicates",
+    body: "17% of invoices pay past the 45-day SLA (late-fee and relationship risk) and near-duplicate vendors invite double payment. Duplicate-vendor detection plus a payment-timing SLA dashboard catch both early.",
   },
 ];
 
 const SKILLS = [
-  "SQL (CTEs, window functions)",
-  "Cohort & retention analysis",
-  "Funnel analysis",
-  "Segmentation",
-  "Python (pandas, matplotlib)",
+  "SQL (CTEs, window functions, INTERSECT)",
+  "Power BI",
   "Tableau",
-  "Data storytelling",
-  "Stakeholder recommendations",
+  "AP / financial analytics",
+  "Data quality & master-data audit",
+  "Spend & Pareto analysis",
+  "Python (pandas)",
+  "Stakeholder reporting",
 ];
 
-const REPO = "https://github.com/ndkn-code/debatelab-analytics";
+const REPO = "https://github.com/ndkn-code/vendor-ap-analytics";
 
 export default function ImpactSection() {
   return (
-    <section className="py-16 sm:py-32 px-4 sm:px-8 bg-muted/30">
+    <section className="py-16 sm:py-32 px-4 sm:px-8">
       <div className="max-w-5xl mx-auto">
         <FadeUp>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-            Recommendations
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-3">Recommendations</h2>
           <p className="text-muted-foreground max-w-2xl mb-10">
-            The point of the analysis isn&apos;t the charts — it&apos;s the
-            decisions they support.
+            Three moves a finance team could act on this quarter.
           </p>
         </FadeUp>
         <div className="grid md:grid-cols-3 gap-6 mb-20">

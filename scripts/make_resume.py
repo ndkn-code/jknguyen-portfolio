@@ -9,7 +9,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import inch
 from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, HRFlowable,
+    BaseDocTemplate, PageTemplate, Frame, Paragraph, Table, TableStyle, HRFlowable,
 )
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -42,6 +42,7 @@ def row(left_html, right_html, left_style=body):
         ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0),
         ("TOPPADDING", (0, 0), (-1, -1), 1), ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
     ]))
+    t.hAlign = "LEFT"
     return t
 
 
@@ -68,34 +69,43 @@ story += [row("<b>Lumist.ai</b> - AI-Powered SAT Prep Platform", "<i>Tampa, Flor
 story += [row("<i>Co-Founder</i>", "Jan 2024 &ndash; Present")]
 story += [
     bp("Led product pivot from offline tutoring ($50K ARR) to an AI-powered SAT platform at $6&ndash;10/mo, acquiring 1,500+ users and 100 paying customers in 2 months (4% conversion)."),
-    bp("Diagnosed low AI Tutor adoption (24 DAU) via Supabase <b>SQL</b> analysis and 1:1 user interviews; led a redesign with guided onboarding that grew usage to 150+ DAU."),
-    bp("Designed a lead-scoring CRM with a 5-factor prioritization algorithm and automated Jira routing; processed 1,000+ leads, eliminating manual triage."),
-    bp("Analyzed marketing-channel ROI to cut underperforming spend and consolidate a 14-person team to an 8-person org, reducing burn."),
+    bp("Diagnosed low AI Tutor adoption (24 DAU) via Supabase <b>SQL</b> analysis and 1:1 user interviews; led a guided-onboarding redesign that grew usage to 150+ DAU."),
+    bp("Analyzed marketing-channel ROI to cut underperforming spend and consolidate a 14-person team to an 8-person org, reducing monthly burn."),
 ]
 story += [row("<b>University of South Florida</b>", "<i>Tampa, Florida</i>")]
-story += [row("<i>ERP Analyst I</i>", "Jan 2025 &ndash; Dec 2025")]
-story += [bp("Owned Unit4 FP&amp;A Lite rollout: gathered requirements and delivered 7+ automated reports saving ~5 hrs/week; authored 75+ job aids and triaged 1,000+ Jira tickets across 3 enterprise systems at 95% SLA.")]
+story += [row("<i>ERP Analyst I</i>", "Jan 2025 &ndash; Present")]
+story += [
+    bp("On-call data analyst for the Unit4 ERP (Coda) finance system: write ad-hoc <b>SQL</b> against a replica database to fulfill stakeholder requests for vendor, transaction, general-ledger/FP&amp;A, and user-access reporting."),
+    bp("Built a <b>Power BI</b> access-review report with row-level security mapping Unit4 user groups to 40+ clinical and finance divisions (multi-CTE SQL with OUTER APPLY and STRING_AGG), replacing a manual access audit."),
+    bp("Wrote advanced SQL (CTEs, INTERSECT, window functions) to audit vendor master data &mdash; flagging never-paid, foreign-address, and cross-entity open/closed vendors; delivered 7+ automated FP&amp;A reports saving ~5 hrs/week."),
+]
 story += [row("<b>VNG Corporation</b>", "<i>Ho Chi Minh, Vietnam</i>")]
 story += [row("<i>Data Analytics Intern</i>", "Jun 2024 &ndash; Aug 2024")]
-story += [bp("Built a Python optimization model that cut revenue-forecast variance from <b>20% to 4%</b> for a $2M game launch; adopted into the production forecasting workflow and still in active use.")]
+story += [
+    bp("Built a Python optimization model that cut revenue-forecast variance from <b>20% to 4%</b> for a $2M game launch; adopted into the production forecasting workflow and still in active use."),
+    bp("Resolved 15+ data-pipeline tickets on missing/incorrect data with PySpark, SparkSQL, and Apache Airflow; built a <b>Tableau</b> heatmap to surface anomalies for the team lead."),
+]
 story += [row("<b>Deloitte</b>", "<i>Hanoi, Vietnam</i>")]
 story += [row("<i>Risk Advisory Intern</i>", "May 2023 &ndash; Jul 2023")]
-story += [bp("Built 4 <b>Tableau</b> dashboards and compliance reports with Oracle BI Publisher, enabling client leadership to track audit status in real time.")]
+story += [
+    bp("Built 4 <b>Tableau</b> dashboards and compliance reports with Oracle BI Publisher, enabling client leadership to track audit status in real time."),
+    bp("Ran system-integration testing on a state bank&rsquo;s compliance platform across 160+ scenarios, logging 10+ defects and compiling findings into a 50+ page requirements document."),
+]
 
 # PROJECTS
 story += header("PROJECTS")
-story += [Paragraph(f"<b>DebateLab Analytics</b> | SQL, Python, pandas, Tableau &nbsp; "
-                    f"{link('GitHub', 'https://github.com/ndkn-code/debatelab-analytics')} | "
-                    f"{link('Case Study', 'https://jknguyen-portfolio.vercel.app/projects/debatelab-analytics')}", body)]
-story += [bp("Wrote SQL (CTEs, window functions, cohort logic) and pandas over 52K+ practice sessions to analyze skill-improvement curves, retention cohorts, and a signup&rarr;activation&rarr;premium funnel; found engagement depth drives conversion and recommended a week-1 activation program.")]
+story += [Paragraph(f"<b>E-Commerce Customer &amp; Revenue Analytics</b> | SQL, Python, pandas, Tableau &nbsp; "
+                    f"{link('GitHub', 'https://github.com/ndkn-code/online-retail-analytics')} | "
+                    f"{link('Case Study', 'https://jknguyen-portfolio.vercel.app/projects/online-retail')}", body)]
+story += [bp("Cleaned <b>1.07M rows</b> of real UK e-commerce data (UCI Online Retail II); ran SQL RFM segmentation + cohort retention on &#163;19.6M across 5,852 customers &mdash; &ldquo;Champions&rdquo; are 25% of buyers but <b>69% of revenue</b>.")]
+story += [Paragraph(f"<b>Vendor &amp; AP Spend Analytics</b> | SQL, Power BI, Tableau &nbsp; "
+                    f"{link('GitHub', 'https://github.com/ndkn-code/vendor-ap-analytics')} | "
+                    f"{link('Case Study', 'https://jknguyen-portfolio.vercel.app/projects/vendor-ap-analytics')}", body)]
+story += [bp("Advanced SQL (CTEs, window functions, INTERSECT) + a Power BI dashboard over a $7.2B two-entity ERP AP ledger: <b>38% of spend in 10 vendors</b>; flagged 561 never-paid / 207 foreign / 118 cross-entity vendors to clean up.")]
 story += [Paragraph(f"<b>Lumist Growth Analytics</b> | SQL, Python, Tableau &nbsp; "
                     f"{link('GitHub', 'https://github.com/ndkn-code/lumist-growth-analytics')} | "
                     f"{link('Case Study', 'https://jknguyen-portfolio.vercel.app/projects/lumist-growth')}", body)]
-story += [bp("Cleaned 151 free-text acquisition labels into 7 channels, then ran SQL cohort/funnel/conversion analysis on 5,500 students to prove volume &ne; value (top channel converted 5.4% vs 33%); delivered a memo to rebalance ad spend and prioritize activation.")]
-story += [Paragraph(f"<b>Revenue Forecasting (Game Launch)</b> | Python, scikit-learn, pandas &nbsp; "
-                    f"{link('GitHub', 'https://github.com/ndkn-code/vng-revenue-forecasting')} | "
-                    f"{link('Case Study', 'https://jknguyen-portfolio.vercel.app/projects/revenue-forecasting')}", body)]
-story += [bp("Engineered lag/seasonality/marketing/event features and a gradient-boosting model; a leakage-safe walk-forward backtest cut forecast error from ~22% to <b>~4.5% MAPE</b>.")]
+story += [bp("Cleaned 151 free-text acquisition labels into 7 channels, then ran SQL cohort/funnel/conversion analysis on 5,500 students to prove volume &ne; value (top channel 5.4% vs 33%); memo to rebalance ad spend.")]
 
 # EDUCATION
 story += header("EDUCATION")
@@ -110,7 +120,12 @@ story += header("SKILLS")
 story += [Paragraph("<b>Technical:</b> SQL (CTEs, window functions), Python, pandas, scikit-learn, Tableau, Power BI, Excel, SQLite, Git", body)]
 story += [Paragraph("<b>Analytics:</b> Cohort analysis, funnel &amp; conversion analysis, retention/churn, forecasting &amp; time-series, A/B testing, data cleaning/ETL, KPI dashboards, data visualization, stakeholder reporting", body)]
 
-doc = SimpleDocTemplate(OUT, pagesize=letter, leftMargin=0.5 * inch, rightMargin=0.5 * inch,
-                        topMargin=0.45 * inch, bottomMargin=0.4 * inch)
+doc = BaseDocTemplate(OUT, pagesize=letter, leftMargin=0.5 * inch, rightMargin=0.5 * inch,
+                      topMargin=0.45 * inch, bottomMargin=0.4 * inch)
+# Zero frame padding so plain paragraphs (section headers, project titles, skills)
+# start at the true 0.5" margin, aligning with the full-width row() tables.
+frame = Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height,
+              leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
+doc.addPageTemplates([PageTemplate(id="resume", frames=[frame])])
 doc.build(story)
 print(f"wrote {os.path.relpath(OUT, ROOT)}")

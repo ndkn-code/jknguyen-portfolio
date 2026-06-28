@@ -3,13 +3,13 @@
 import { FadeUp, AnimatedCounter } from "@/components/animations/motion";
 
 const KPIS = [
-  { value: "4,200", label: "Learners" },
-  { value: "52,559", label: "Practice sessions" },
-  { value: "5", label: "AI-scored skills" },
-  { value: "12 mo", label: "Of activity" },
+  { value: "$7.2B", label: "AP spend analyzed" },
+  { value: "3,552", label: "Vendors" },
+  { value: "90K", label: "AP transactions" },
+  { value: "38%", label: "Spend in top 10 vendors" },
 ];
 
-const STACK = ["SQL", "Python · pandas", "SQLite", "Tableau"];
+const STACK = ["SQL", "Power BI", "Tableau", "Python · pandas"];
 
 export default function HeroSection() {
   return (
@@ -24,33 +24,34 @@ export default function HeroSection() {
       <div className="max-w-4xl mx-auto text-center">
         <FadeUp>
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-6">
-            Data &amp; Business Analyst Case Study
+            Finance &amp; BI Case Study
           </span>
         </FadeUp>
         <FadeUp delay={0.05}>
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-5">
-            DebateLab — Learning &amp; Growth Analytics
+            Vendor &amp; AP Spend Analytics
           </h1>
         </FadeUp>
         <FadeUp delay={0.1}>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-4">
-            Two questions, one dataset:{" "}
+            Two questions every finance team asks of its ERP:{" "}
             <span className="text-foreground font-semibold">
-              what makes a learner improve
+              where is the money actually going
             </span>
             , and{" "}
             <span className="text-foreground font-semibold">
-              what turns a free user into a paying one?
+              which vendors need cleaning up?
             </span>{" "}
-            An end-to-end analysis — SQL → Python → dashboards — of an AI
-            debate-practice platform.
+            A SQL → Power BI audit of accounts-payable spend and vendor master
+            data across a two-entity health system.
           </p>
         </FadeUp>
         <FadeUp delay={0.15}>
           <p className="text-xs text-muted-foreground/70 max-w-xl mx-auto mb-8 italic">
-            Built on a synthetic dataset modeled on DebateLab&apos;s real
-            production schema — production data is confidential, so the
-            methodology is the showcase.
+            Built on a synthetic dataset modeled on a real Unit4/Coda ERP schema
+            — the kind of system I work in day to day. Production financial data
+            is confidential, so no real figures or names ship; the schema, SQL,
+            and analyst workflow are true to life.
           </p>
         </FadeUp>
         <FadeUp delay={0.2}>
@@ -83,7 +84,7 @@ export default function HeroSection() {
         <FadeUp delay={0.3}>
           <div className="flex flex-col items-center gap-3">
             <a
-              href="https://github.com/ndkn-code/debatelab-analytics"
+              href="https://github.com/ndkn-code/vendor-ap-analytics"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-foreground text-background px-8 py-4 rounded-full font-semibold text-sm hover:opacity-90 transition-opacity shadow-lg"
@@ -92,7 +93,7 @@ export default function HeroSection() {
               <span aria-hidden>→</span>
             </a>
             <a
-              href="/case-studies/debatelab-analytics.pdf"
+              href="/case-studies/vendor-ap-analytics.pdf"
               target="_blank"
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >

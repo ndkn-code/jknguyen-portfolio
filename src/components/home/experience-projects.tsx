@@ -59,18 +59,6 @@ const allProjects: Project[] = [
     image: "/images/debatelab-dashboard.png",
   },
   {
-    href: "/projects/debatelab-analytics",
-    categories: ["Data"],
-    badge: "Data",
-    badgeColor:
-      "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
-    title: "DebateLab Analytics",
-    description:
-      "An end-to-end DA + BA analysis of DebateLab — what drives skill gains, retention, and free→premium conversion. SQL → Python → Tableau & Power BI.",
-    tech: ["SQL", "Python", "Tableau"],
-    image: "/images/debatelab-analytics/02_skill_learning_curves.png",
-  },
-  {
     href: "/projects/lumist-growth",
     categories: ["Data"],
     badge: "Data",
@@ -83,6 +71,30 @@ const allProjects: Project[] = [
     image: "/images/lumist-growth/01_channel_volume_vs_value.png",
   },
   {
+    href: "/projects/online-retail",
+    categories: ["Data"],
+    badge: "Real Data",
+    badgeColor:
+      "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400",
+    title: "E-Commerce Customer Analytics",
+    description:
+      "RFM segmentation, cohort retention, and revenue concentration on 1M+ rows of real UK e-commerce data (UCI Online Retail II) — fully reproducible. SQL → Python → Tableau.",
+    tech: ["SQL", "Python", "Tableau"],
+    image: "/images/online-retail/rfm_segments.png",
+  },
+  {
+    href: "/projects/vendor-ap-analytics",
+    categories: ["Data"],
+    badge: "BI",
+    badgeColor:
+      "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
+    title: "Vendor & AP Spend Analytics",
+    description:
+      "Where the AP money goes and which vendors to clean up — advanced SQL + Power BI on a synthetic healthcare-finance ERP, surfacing spend concentration, never-paid vendors, and cross-entity compliance gaps.",
+    tech: ["SQL", "Power BI", "Tableau"],
+    image: "/images/vendor-ap-analytics/spend_pareto.png",
+  },
+  {
     href: "/projects/revenue-forecasting",
     categories: ["Data"],
     badge: "ML",
@@ -90,7 +102,7 @@ const allProjects: Project[] = [
       "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400",
     title: "Revenue Forecasting",
     description:
-      "Forecasting a mobile-game launch's daily revenue — cutting forecast error from ~22% to ~4.5% with a gradient-boosting model and walk-forward backtesting. Recreates my VNG work.",
+      "Daily-revenue forecasting through a volatile product launch — cutting error from ~22% to ~4.5% with gradient boosting + walk-forward backtesting. A recreation of my VNG work that generalizes across industries.",
     tech: ["Python", "scikit-learn", "pandas"],
     image: "/images/revenue-forecasting/02_backtest_forecast.png",
   },

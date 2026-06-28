@@ -7,8 +7,9 @@ import { motion } from "framer-motion";
 // Project order for navigation
 const projectOrder = [
   "/projects/debatelab",
-  "/projects/debatelab-analytics",
   "/projects/lumist-growth",
+  "/projects/online-retail",
+  "/projects/vendor-ap-analytics",
   "/projects/revenue-forecasting",
   "/projects/lumist-analytics",
   "/projects/ai-customer-support",
@@ -18,8 +19,9 @@ const projectOrder = [
 
 const projectNames: Record<string, string> = {
   "/projects/debatelab": "DebateLab",
-  "/projects/debatelab-analytics": "DebateLab Analytics",
   "/projects/lumist-growth": "Lumist Growth",
+  "/projects/online-retail": "E-Commerce Analytics",
+  "/projects/vendor-ap-analytics": "Vendor & AP Analytics",
   "/projects/revenue-forecasting": "Revenue Forecasting",
   "/projects/lumist-analytics": "Lumist Analytics",
   "/projects/ai-customer-support": "AI Support",

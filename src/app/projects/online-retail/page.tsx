@@ -3,23 +3,27 @@ import Footer from "@/components/footer";
 import BackButton from "@/components/projects/back-button";
 import HeroSection from "./hero";
 import MethodologySection from "./methodology";
+import CleaningSection from "./cleaning";
 import FindingsSection from "./findings";
+import DashboardsSection from "./dashboards";
 import ImpactSection from "./impact";
 
 export const metadata: Metadata = {
-  title: "Revenue Forecasting (ML) — Case Study | Jack Nguyen",
+  title: "E-Commerce Customer & Revenue Analytics — Data Case Study | Jack Nguyen",
   description:
-    "Forecasting volatile daily revenue through a product launch with a gradient-boosting model and a leakage-safe walk-forward backtest — cutting forecast error from ~22% to ~4.5%. Python, scikit-learn, pandas. A recreation of my VNG forecasting work on synthetic data; the approach transfers across industries.",
+    "Two years of real UK online-retail transactions (UCI Online Retail II): RFM customer segmentation, cohort retention, and revenue concentration on £19.6M across 5,852 customers. SQL, Python, and Tableau — fully reproducible from a public dataset.",
 };
 
-export default function RevenueForecastingPage() {
+export default function OnlineRetailPage() {
   return (
     <>
       <BackButton />
       <main>
         <HeroSection />
         <MethodologySection />
+        <CleaningSection />
         <FindingsSection />
+        <DashboardsSection />
         <ImpactSection />
       </main>
       <Footer />

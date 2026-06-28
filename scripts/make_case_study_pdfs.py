@@ -27,27 +27,6 @@ MUTED = colors.HexColor("#6b7280")
 
 PROJECTS = [
     {
-        "slug": "debatelab-analytics",
-        "title": "DebateLab — Learning &amp; Growth Analytics",
-        "subtitle": "Product analytics (DA + BA)  ·  SQL · Python · Tableau",
-        "portfolio": "jknguyen-portfolio.vercel.app/projects/debatelab-analytics",
-        "repo": "github.com/ndkn-code/debatelab-analytics",
-        "question": "What makes a learner improve — and what turns a free user into a paying one?",
-        "method": "Modeled the product schema and wrote SQL (CTEs, window functions, cohort logic), "
-                  "validated in pandas. 4,200 users / 52K practice sessions (synthetic dataset on the real schema).",
-        "charts": ["debatelab-analytics/01_frequency_vs_improvement.png", "debatelab-analytics/03_funnel.png"],
-        "findings": [
-            "Practice gains rise with frequency, then plateau past ~4 sessions/week.",
-            "Of 5 scored skills, clarity improves fastest (+19 pts) and rebuttal slowest (+9).",
-            "Engagement funnel: 70% activate, 43% reach 5 practices, 8.6% convert to premium.",
-        ],
-        "recommendations": [
-            "Engineer a 5-practice habit in week 1 — the funnel's biggest leak.",
-            "Concentrate coaching on the slow-moving skills (rebuttal, logic).",
-            "Design streaks around ~4 sessions/week, where gains plateau.",
-        ],
-    },
-    {
         "slug": "lumist-growth",
         "title": "Lumist — Acquisition &amp; Growth Analytics",
         "subtitle": "Growth / BI (BA)  ·  SQL · Python · Tableau",
@@ -69,12 +48,54 @@ PROJECTS = [
         ],
     },
     {
+        "slug": "online-retail",
+        "title": "E-Commerce Customer &amp; Revenue Analytics",
+        "subtitle": "Retail / customer analytics (real public data)  ·  SQL · Python · Tableau",
+        "portfolio": "jknguyen-portfolio.vercel.app/projects/online-retail",
+        "repo": "github.com/ndkn-code/online-retail-analytics",
+        "question": "Who are the most valuable customers, do they come back, and where does revenue come from?",
+        "method": "Cleaned 1.07M rows of real UK online-retail data (UCI Online Retail II) and ran SQL RFM segmentation, "
+                  "cohort retention, and revenue concentration. £19.6M revenue / 5,852 customers / 43 countries.",
+        "charts": ["online-retail/rfm_segments.png", "online-retail/cohort_retention.png"],
+        "findings": [
+            "Champions are 25% of customers but 69% of revenue; Loyal add another 14%.",
+            "72% of customers re-purchase; strong cohorts still buy at ~37% a year later.",
+            "Revenue is concentrated: ~23% of customers = 80%, and the UK alone is 85.5%.",
+        ],
+        "recommendations": [
+            "Protect Champions with a VIP / loyalty track — they carry ~70% of revenue.",
+            "Reactivate At-Risk / Hibernating buyers; cheaper than cold acquisition.",
+            "Diversify beyond the UK using the 42 countries already transacting.",
+        ],
+    },
+    {
+        "slug": "vendor-ap-analytics",
+        "title": "Vendor &amp; AP Spend Analytics",
+        "subtitle": "Finance / BI (BA)  ·  SQL · Power BI · Tableau",
+        "portfolio": "jknguyen-portfolio.vercel.app/projects/vendor-ap-analytics",
+        "repo": "github.com/ndkn-code/vendor-ap-analytics",
+        "question": "Where is accounts-payable spend going, and which vendors need cleaning up?",
+        "method": "Wrote advanced SQL (CTEs, window functions, INTERSECT) over a two-entity ERP AP ledger, "
+                  "validated in pandas. $7.2B spend / 3,552 vendors / 90K lines (synthetic, modeled on a real Unit4/Coda schema).",
+        "charts": ["vendor-ap-analytics/spend_pareto.png", "vendor-ap-analytics/vendor_hygiene.png"],
+        "findings": [
+            "Spend is steeply Pareto: top 10 vendors = 38%, top 1% (29 vendors) = 61% of $7.2B AP.",
+            "Vendor master data needs cleanup: 561 never-paid, 207 foreign-address, 118 cross-entity open/closed, 52 near-dup pairs.",
+            "17% of invoices pay past the 45-day SLA (mean lag ~29 days) — about $1.2B paid late.",
+        ],
+        "recommendations": [
+            "Run a quarterly vendor-master cleanup: deactivate never-paid, merge duplicates, close cross-entity gaps.",
+            "Focus sourcing on the ~82 vendors that make up 80% of spend.",
+            "Add duplicate-vendor detection + a payment-timing SLA dashboard to cut late and double payments.",
+        ],
+    },
+    {
         "slug": "revenue-forecasting",
-        "title": "Game-Launch Revenue Forecasting",
+        "title": "Revenue Forecasting",
         "subtitle": "Forecasting / ML  ·  Python · scikit-learn",
         "portfolio": "jknguyen-portfolio.vercel.app/projects/revenue-forecasting",
         "repo": "github.com/ndkn-code/vng-revenue-forecasting",
-        "question": "Forecast a game launch's daily revenue accurately enough to plan budgets against.",
+        "question": "Forecast a product launch's volatile daily revenue accurately enough to plan budgets against.",
         "method": "Engineered lag / seasonality / marketing / event features; gradient-boosting model vs naive "
                   "baselines, scored on a leakage-safe walk-forward backtest. Recreates VNG forecasting work.",
         "charts": ["revenue-forecasting/03_mape_comparison.png", "revenue-forecasting/02_backtest_forecast.png"],

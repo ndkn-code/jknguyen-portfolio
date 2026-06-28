@@ -3,41 +3,39 @@
 import Image from "next/image";
 import { FadeUp } from "@/components/animations/motion";
 
-const IMG = "/images/debatelab-analytics";
-const REPO = "https://github.com/ndkn-code/debatelab-analytics";
+const IMG = "/images/online-retail";
+const REPO = "https://github.com/ndkn-code/online-retail-analytics";
 // Set to the published Tableau Public URL once live; until then the CTA points to the repo guide.
 const TABLEAU_URL = "";
 
 const VIEWS = [
-  "Score gain by practice frequency",
-  "Skill learning curves (5 skills)",
-  "Retention heatmap (D1 / D7 / D30)",
-  "Engagement → premium funnel",
-  "Conversion drivers (free vs premium)",
-  "EN vs VI track preference",
+  "Revenue trend & seasonality",
+  "RFM segments — customers vs revenue",
+  "Cohort retention heatmap",
+  "Top products & revenue by country",
 ];
 
 const PREVIEWS = [
-  `${IMG}/02_skill_learning_curves.png`,
-  `${IMG}/03_funnel.png`,
-  `${IMG}/04_retention_heatmap.png`,
-  `${IMG}/01_frequency_vs_improvement.png`,
+  `${IMG}/revenue_trend.png`,
+  `${IMG}/rfm_segments.png`,
+  `${IMG}/cohort_retention.png`,
+  `${IMG}/top_products_and_country.png`,
 ];
 
 export default function DashboardsSection() {
   const href = TABLEAU_URL || REPO;
   const live = Boolean(TABLEAU_URL);
   return (
-    <section className="py-16 sm:py-24 px-4 sm:px-8">
+    <section className="py-16 sm:py-24 px-4 sm:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <FadeUp>
           <h2 className="text-3xl sm:text-4xl font-bold mb-3">
             The interactive dashboard
           </h2>
           <p className="text-muted-foreground max-w-2xl mb-12">
-            The whole analysis tied together in one Tableau Public dashboard —
-            the skill story and the engagement-to-revenue story in a single
-            interactive view.
+            The customer-and-revenue analysis packaged into one Tableau Public
+            dashboard a retail team could explore — segments, retention, and
+            where revenue comes from, in one place.
           </p>
         </FadeUp>
         <FadeUp delay={0.1}>
@@ -48,11 +46,11 @@ export default function DashboardsSection() {
                   Tableau Public
                 </span>
                 <span className="text-xs font-semibold uppercase tracking-wider text-primary">
-                  Data + Business Analyst
+                  Retail Analytics
                 </span>
               </div>
               <h3 className="text-xl font-bold mb-4">
-                Skill, Retention &amp; Conversion
+                Customers, Retention &amp; Revenue
               </h3>
               <ul className="space-y-2 mb-6 flex-grow">
                 {VIEWS.map((v) => (

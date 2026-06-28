@@ -3,13 +3,13 @@
 import { FadeUp, AnimatedCounter } from "@/components/animations/motion";
 
 const KPIS = [
-  { value: "4.5%", label: "Model error (MAPE)" },
-  { value: "~22%", label: "Baseline error" },
-  { value: "−80%", label: "Error reduction" },
-  { value: "270", label: "Days modeled" },
+  { value: "£19.6M", label: "Revenue analyzed" },
+  { value: "5,852", label: "Customers" },
+  { value: "1.07M", label: "Transactions" },
+  { value: "43", label: "Countries" },
 ];
 
-const STACK = ["Python", "scikit-learn", "pandas", "Matplotlib"];
+const STACK = ["SQL", "Python · pandas", "SQLite", "Tableau"];
 
 export default function HeroSection() {
   return (
@@ -24,29 +24,34 @@ export default function HeroSection() {
       <div className="max-w-4xl mx-auto text-center">
         <FadeUp>
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-6">
-            Machine Learning · Forecasting
+            Real-Data Case Study
           </span>
         </FadeUp>
         <FadeUp delay={0.05}>
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-5">
-            Revenue Forecasting
+            E-Commerce Customer &amp; Revenue Analytics
           </h1>
         </FadeUp>
         <FadeUp delay={0.1}>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-4">
-            Forecasting volatile daily revenue through a product launch —
-            cutting forecast error from{" "}
-            <span className="text-foreground font-semibold">~22% to ~4.5%</span>{" "}
-            with a feature-aware gradient-boosting model and a leakage-safe
-            walk-forward backtest. A recreation of my VNG forecasting work, with
-            an approach that transfers to any launch or seasonal revenue.
+            Two years of real UK online-retail transactions — £19.6M across 5,852
+            customers and 43 countries. Three questions:{" "}
+            <span className="text-foreground font-semibold">
+              who are the most valuable customers
+            </span>
+            ,{" "}
+            <span className="text-foreground font-semibold">do they come back</span>
+            , and{" "}
+            <span className="text-foreground font-semibold">
+              where does revenue actually come from?
+            </span>
           </p>
         </FadeUp>
         <FadeUp delay={0.15}>
           <p className="text-xs text-muted-foreground/70 max-w-xl mx-auto mb-8 italic">
-            Synthetic game-revenue data with the real launch dynamics (decay,
-            seasonality, marketing, events) — VNG&apos;s data is confidential, so
-            the modeling approach is the showcase.
+            Built on the public UCI Online Retail II dataset — real transactions,
+            fully reproducible: every figure reruns from the raw file (fetch →
+            clean → analyze). Dataset cited in the repo.
           </p>
         </FadeUp>
         <FadeUp delay={0.2}>
@@ -79,16 +84,16 @@ export default function HeroSection() {
         <FadeUp delay={0.3}>
           <div className="flex flex-col items-center gap-3">
             <a
-              href="https://github.com/ndkn-code/vng-revenue-forecasting"
+              href="https://github.com/ndkn-code/online-retail-analytics"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-foreground text-background px-8 py-4 rounded-full font-semibold text-sm hover:opacity-90 transition-opacity shadow-lg"
             >
-              View the notebook &amp; code on GitHub
+              View code, SQL &amp; notebook on GitHub
               <span aria-hidden>→</span>
             </a>
             <a
-              href="/case-studies/revenue-forecasting.pdf"
+              href="/case-studies/online-retail.pdf"
               target="_blank"
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
