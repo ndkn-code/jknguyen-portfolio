@@ -54,7 +54,7 @@ const allProjects: Project[] = [
       "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary",
     title: "DebateLab",
     description:
-      "English speaking practice platform for Vietnamese students. Built for family members who found existing apps too passive \u2014 designed debate-format learning that drove repeat engagement through gamification.",
+      "English speaking practice platform for Vietnamese students. Built for family members who found existing apps too passive, so I designed debate-format learning that drove repeat engagement through gamification.",
     tech: ["Next.js", "Gemini AI", "Deepgram", "Supabase", "Groq"],
     image: "/images/debatelab-dashboard.png",
   },
