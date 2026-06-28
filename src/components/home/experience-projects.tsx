@@ -322,7 +322,7 @@ export default function ExperienceAndProjects() {
               <div className="mt-8 pt-6 border-t border-border">
                 <a
                   className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
-                  href="/jack_nguyen_pm.pdf"
+                  href="/jack_nguyen_data_analyst.pdf"
                   target="_blank"
                 >
                   View Full Resume →
