@@ -29,7 +29,7 @@ export default function HeroSection() {
         </FadeUp>
         <FadeUp delay={0.05}>
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-5">
-            Lumist — Acquisition &amp; Growth Analytics
+            Lumist: Acquisition &amp; Growth Analytics
           </h1>
         </FadeUp>
         <FadeUp delay={0.1}>
@@ -49,7 +49,7 @@ export default function HeroSection() {
           <p className="text-xs text-muted-foreground/70 max-w-xl mx-auto mb-8 italic">
             Built on a synthetic dataset calibrated to Lumist&apos;s real
             production distributions (channels anonymized; no real figures or
-            PII) — the analysis is true-to-life, nothing confidential ships.
+            PII), the analysis is true-to-life, nothing confidential ships.
           </p>
         </FadeUp>
         <FadeUp delay={0.2}>

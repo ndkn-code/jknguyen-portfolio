@@ -34,7 +34,7 @@ export default function HeroSection() {
         </FadeUp>
         <FadeUp delay={0.1}>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-4">
-            Forecasting volatile daily revenue through a product launch —
+            Forecasting volatile daily revenue through a product launch,
             cutting forecast error from{" "}
             <span className="text-foreground font-semibold">~22% to ~4.5%</span>{" "}
             with a feature-aware gradient-boosting model and a leakage-safe
@@ -45,7 +45,7 @@ export default function HeroSection() {
         <FadeUp delay={0.15}>
           <p className="text-xs text-muted-foreground/70 max-w-xl mx-auto mb-8 italic">
             Synthetic game-revenue data with the real launch dynamics (decay,
-            seasonality, marketing, events) — VNG&apos;s data is confidential, so
+            seasonality, marketing, events), VNG&apos;s data is confidential, so
             the modeling approach is the showcase.
           </p>
         </FadeUp>

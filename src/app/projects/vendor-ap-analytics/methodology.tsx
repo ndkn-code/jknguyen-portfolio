@@ -4,10 +4,10 @@ import { FadeLeft, FadeRight, FadeUp } from "@/components/animations/motion";
 import CodeBlock from "@/components/ui/code-block";
 
 const TABLES = [
-  { name: "oas_element", note: "vendor + division master — code, name, status, country" },
+  { name: "oas_element", note: "vendor + division master: code, name, status, country" },
   { name: "oas_grplist", note: "vendor groups & spend categories" },
-  { name: "oas_dochead", note: "AP document headers — entity, period, year" },
-  { name: "oas_docline", note: "AP transaction lines — vendor, amount, paid status" },
+  { name: "oas_dochead", note: "AP document headers: entity, period, year" },
+  { name: "oas_docline", note: "AP transaction lines: vendor, amount, paid status" },
 ];
 
 const SPEND_SQL = `-- Spend concentration: rank vendors by paid AP, with a running % of total.
@@ -34,8 +34,8 @@ export default function MethodologySection() {
         </FadeUp>
         <FadeUp delay={0.05}>
           <p className="text-muted-foreground max-w-2xl mb-12">
-            A four-table slice of an ERP accounts-payable ledger — two legal
-            entities, ~3,500 vendors, 90K transaction lines — queried with SQL
+            A four-table slice of an ERP accounts-payable ledger (two legal
+            entities, ~3,500 vendors, 90K transaction lines), queried with SQL
             (CTEs + window functions) and validated in pandas. Modeled on a real
             Unit4/Coda schema, the same shape I query at work.
           </p>
@@ -67,7 +67,7 @@ export default function MethodologySection() {
           </FadeLeft>
           <FadeRight>
             <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
-              Representative query — vendor spend concentration
+              Representative query: vendor spend concentration
             </p>
             <CodeBlock code={SPEND_SQL} filename="01_spend_concentration.sql" />
           </FadeRight>

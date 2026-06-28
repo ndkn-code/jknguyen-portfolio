@@ -38,7 +38,7 @@ export default function CleaningSection() {
           <p className="text-muted-foreground max-w-2xl mb-10">
             Real transactional data is never analysis-ready. Before a single
             insight, 1.07M rows had to be deduped, stripped of cancellations and
-            non-product charges, and validated — the unglamorous work that is
+            non-product charges, and validated, the unglamorous work that is
             most of the real job.
           </p>
         </FadeUp>
@@ -75,7 +75,7 @@ export default function CleaningSection() {
             <Callout variant="note" title="Real data is messy" className="mt-6">
               Duplicate rows, cancellation invoices (<code>C</code>-prefixed,
               split off as returns), non-product service codes (postage, bank
-              charges, gift cards), and zero/negative quantities and prices — all
+              charges, gift cards), and zero/negative quantities and prices, all
               removed. And <b>226,761 rows (22.6%)</b> have no customer ID: kept
               for revenue totals, excluded from customer-level work rather than
               guessed.

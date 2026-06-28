@@ -69,8 +69,7 @@ export default function HeroSection() {
           >
             An internal AI agent I built for the Lumist team. Lives in Telegram,
             answers business questions from 5 data sources, writes SEO-optimized
-            blog posts, and remembers everything through an Obsidian vault brain
-            &mdash; all inside a deny-by-default security sandbox.
+            blog posts, and remembers everything through an Obsidian vault brain, all inside a deny-by-default security sandbox.
           </motion.p>
 
           <motion.div

@@ -9,7 +9,7 @@ import DashboardsSection from "./dashboards";
 import ImpactSection from "./impact";
 
 export const metadata: Metadata = {
-  title: "Vendor & AP Spend Analytics — Data Case Study | Jack Nguyen",
+  title: "Vendor & AP Spend Analytics: Data Case Study | Jack Nguyen",
   description:
     "An accounts-payable spend and vendor master-data audit of a two-entity health system: where AP dollars concentrate, which vendors to clean up, and where payment risk sits. SQL, Power BI, and Tableau on a synthetic dataset modeled on a real Unit4/Coda ERP schema.",
 };

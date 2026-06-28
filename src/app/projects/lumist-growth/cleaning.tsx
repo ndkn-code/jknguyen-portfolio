@@ -54,7 +54,7 @@ export default function CleaningSection() {
           </h2>
           <p className="text-muted-foreground max-w-2xl mb-10">
             The signup form let students free-type how they found Lumist. Before
-            any analysis was possible, that field had to be cleaned — the kind of
+            any analysis was possible, that field had to be cleaned, the kind of
             unglamorous work that is most of the real job.
           </p>
         </FadeUp>
@@ -79,7 +79,7 @@ export default function CleaningSection() {
           <FadeUp>
             <div className="bg-white dark:bg-card border border-border rounded-xl p-5 sm:p-6">
               <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3">
-                Raw — 151 variants
+                Raw: 151 variants
               </p>
               <div className="flex flex-wrap gap-2 mb-5">
                 {RAW.map((r, i) => (
@@ -92,7 +92,7 @@ export default function CleaningSection() {
                 ))}
               </div>
               <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3">
-                Clean — 7 channels
+                Clean: 7 channels
               </p>
               <div className="flex flex-wrap gap-2">
                 {CLEAN.map((c) => (

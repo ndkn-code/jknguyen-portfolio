@@ -28,7 +28,7 @@ MUTED = colors.HexColor("#6b7280")
 PROJECTS = [
     {
         "slug": "lumist-growth",
-        "title": "Lumist — Acquisition &amp; Growth Analytics",
+        "title": "Lumist: Acquisition &amp; Growth Analytics",
         "subtitle": "Growth / BI (BA)  ·  SQL · Python · Tableau",
         "portfolio": "jknguyen-portfolio.vercel.app/projects/lumist-growth",
         "repo": "github.com/ndkn-code/lumist-growth-analytics",
@@ -43,7 +43,7 @@ PROJECTS = [
         ],
         "recommendations": [
             "Rebalance acquisition spend toward high-efficiency channels; judge channels on paid users.",
-            "Make week-1 activation the north-star metric — it lifts conversion across every channel.",
+            "Make week-1 activation the north-star metric: it lifts conversion across every channel.",
             "Tier CAC targets by channel quality, not raw signups.",
         ],
     },
@@ -63,7 +63,7 @@ PROJECTS = [
             "Revenue is concentrated: ~23% of customers = 80%, and the UK alone is 85.5%.",
         ],
         "recommendations": [
-            "Protect Champions with a VIP / loyalty track — they carry ~70% of revenue.",
+            "Protect Champions with a VIP / loyalty track: they carry ~70% of revenue.",
             "Reactivate At-Risk / Hibernating buyers; cheaper than cold acquisition.",
             "Diversify beyond the UK using the 42 countries already transacting.",
         ],
@@ -81,7 +81,7 @@ PROJECTS = [
         "findings": [
             "Spend is steeply Pareto: top 10 vendors = 38%, top 1% (29 vendors) = 61% of $7.2B AP.",
             "Vendor master data needs cleanup: 561 never-paid, 207 foreign-address, 118 cross-entity open/closed, 52 near-dup pairs.",
-            "17% of invoices pay past the 45-day SLA (mean lag ~29 days) — about $1.2B paid late.",
+            "17% of invoices pay past the 45-day SLA (mean lag ~29 days), about $1.2B paid late.",
         ],
         "recommendations": [
             "Run a quarterly vendor-master cleanup: deactivate never-paid, merge duplicates, close cross-entity gaps.",
@@ -100,7 +100,7 @@ PROJECTS = [
                   "baselines, scored on a leakage-safe walk-forward backtest. Recreates VNG forecasting work.",
         "charts": ["revenue-forecasting/03_mape_comparison.png", "revenue-forecasting/02_backtest_forecast.png"],
         "findings": [
-            "Model error 4.5% (MAPE) vs ~22% for a moving-average baseline — a ~80% reduction.",
+            "Model error 4.5% (MAPE) vs ~22% for a moving-average baseline, a ~80% reduction.",
             "Naive forecasts fail because they lag launch decay, weekends, and events by a day.",
             "Recent revenue, marketing spend, and seasonality carry the forecast.",
         ],

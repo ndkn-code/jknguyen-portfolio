@@ -1,6 +1,6 @@
 """
 Build Jack's Data-Analyst-tailored 1-page resume PDF (Times New Roman, matching
-the resume-tailor skill's layout) with reportlab — no LibreOffice needed.
+the resume-tailor skill's layout) with reportlab, no LibreOffice needed.
 Out -> public/jack_nguyen_data_analyst.pdf
 """
 import os
@@ -77,7 +77,7 @@ story += [row("<i>ERP Analyst I</i>", "Jan 2025 &ndash; Present")]
 story += [
     bp("On-call data analyst for the Unit4 ERP (Coda) finance system: write ad-hoc <b>SQL</b> against a replica database to fulfill stakeholder requests for vendor, transaction, general-ledger/FP&amp;A, and user-access reporting."),
     bp("Built a <b>Power BI</b> access-review report with row-level security mapping Unit4 user groups to 40+ clinical and finance divisions (multi-CTE SQL with OUTER APPLY and STRING_AGG), replacing a manual access audit."),
-    bp("Wrote advanced SQL (CTEs, INTERSECT, window functions) to audit vendor master data &mdash; flagging never-paid, foreign-address, and cross-entity open/closed vendors; delivered 7+ automated FP&amp;A reports saving ~5 hrs/week."),
+    bp("Wrote advanced SQL (CTEs, INTERSECT, window functions) to audit vendor master data, flagging never-paid, foreign-address, and cross-entity open/closed vendors; delivered 7+ automated FP&amp;A reports saving ~5 hrs/week."),
 ]
 story += [row("<b>VNG Corporation</b>", "<i>Ho Chi Minh, Vietnam</i>")]
 story += [row("<i>Data Analytics Intern</i>", "Jun 2024 &ndash; Aug 2024")]
@@ -97,7 +97,7 @@ story += header("PROJECTS")
 story += [Paragraph(f"<b>E-Commerce Customer &amp; Revenue Analytics</b> | SQL, Python, pandas, Tableau &nbsp; "
                     f"{link('GitHub', 'https://github.com/ndkn-code/online-retail-analytics')} | "
                     f"{link('Case Study', 'https://jknguyen-portfolio.vercel.app/projects/online-retail')}", body)]
-story += [bp("Cleaned <b>1.07M rows</b> of real UK e-commerce data (UCI Online Retail II); ran SQL RFM segmentation + cohort retention on &#163;19.6M across 5,852 customers &mdash; &ldquo;Champions&rdquo; are 25% of buyers but <b>69% of revenue</b>.")]
+story += [bp("Cleaned <b>1.07M rows</b> of real UK e-commerce data (UCI Online Retail II); ran SQL RFM segmentation + cohort retention on &#163;19.6M across 5,852 customers: &ldquo;Champions&rdquo; are 25% of buyers but <b>69% of revenue</b>.")]
 story += [Paragraph(f"<b>Vendor &amp; AP Spend Analytics</b> | SQL, Power BI, Tableau &nbsp; "
                     f"{link('GitHub', 'https://github.com/ndkn-code/vendor-ap-analytics')} | "
                     f"{link('Case Study', 'https://jknguyen-portfolio.vercel.app/projects/vendor-ap-analytics')}", body)]

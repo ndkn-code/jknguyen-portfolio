@@ -48,8 +48,8 @@ export default function FindingsSection() {
             caption="Mean absolute % error on a 90-day hold-out, by method."
           />
           <Callout title="The model is ~5× more accurate than the baseline">
-            A 7-day moving average — a typical &ldquo;business-as-usual&rdquo;
-            forecast — misses by <b>~22%</b>; seasonal-naive by 24%. The
+            A 7-day moving average, a typical &ldquo;business-as-usual&rdquo;
+            forecast, misses by <b>~22%</b>; seasonal-naive by 24%. The
             gradient-boosting model lands at <b>4.5%</b>, an <b>~80% error
             reduction</b>. (Mirrors the 20%→4% result I delivered at VNG.)
           </Callout>
@@ -59,12 +59,12 @@ export default function FindingsSection() {
           <Figure
             src={`${IMG}/02_backtest_forecast.png`}
             alt="Walk-forward backtest: actual vs model vs naive"
-            caption="90-day walk-forward backtest — actual vs model forecast vs naive."
+            caption="90-day walk-forward backtest: actual vs model forecast vs naive."
           />
           <Callout title="It tracks launches, events, and weekends">
             The model (dashed) hugs the actual curve through event spikes and
             weekend swings, while the naive forecast (red) is always a day
-            late — which is exactly where its error comes from.
+            late, which is exactly where its error comes from.
           </Callout>
         </Row>
 
@@ -76,7 +76,7 @@ export default function FindingsSection() {
           />
           <Callout variant="note" title="Why simple forecasts fail here">
             Revenue is shaped by a launch-decay curve, strong weekend
-            seasonality, marketing bursts, and periodic in-game events — none of
+            seasonality, marketing bursts, and periodic in-game events, none of
             which &ldquo;yesterday&rsquo;s number&rdquo; can anticipate.
           </Callout>
         </Row>
@@ -89,7 +89,7 @@ export default function FindingsSection() {
           />
           <Callout title="What the model actually learned">
             Recent revenue (lags &amp; rolling means), <b>marketing spend</b>,
-            and <b>seasonality/events</b> carry the forecast — the same drivers a
+            and <b>seasonality/events</b> carry the forecast, the same drivers a
             growth team controls, which makes the model useful for planning, not
             just prediction.
           </Callout>

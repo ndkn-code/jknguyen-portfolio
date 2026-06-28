@@ -10,7 +10,7 @@ const TABLEAU_URL = "";
 
 const VIEWS = [
   "Revenue trend & seasonality",
-  "RFM segments — customers vs revenue",
+  "RFM segments: customers vs revenue",
   "Cohort retention heatmap",
   "Top products & revenue by country",
 ];
@@ -34,7 +34,7 @@ export default function DashboardsSection() {
           </h2>
           <p className="text-muted-foreground max-w-2xl mb-12">
             The customer-and-revenue analysis packaged into one Tableau Public
-            dashboard a retail team could explore — segments, retention, and
+            dashboard a retail team could explore: segments, retention, and
             where revenue comes from, in one place.
           </p>
         </FadeUp>

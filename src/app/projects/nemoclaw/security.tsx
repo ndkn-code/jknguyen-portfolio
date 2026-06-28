@@ -26,7 +26,7 @@ const endpoints = [
 ];
 
 export default function SecuritySection() {
-  // Sort: denied first, then allowed — so allowed ones "light up" at the end
+  // Sort: denied first, then allowed, so allowed ones "light up" at the end
   const sorted = [...endpoints].sort(
     (a, b) => Number(a.allowed) - Number(b.allowed)
   );

@@ -128,13 +128,12 @@ export default function ProblemSection() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Every day, team members asked ad-hoc data questions. Someone had to
               stop what they were doing, log into Supabase or GitHub, pull the
-              numbers, and relay them back. The context-switching cost was real
-              &mdash; and the answers were always stale by the time they arrived.
+              numbers, and relay them back. The context-switching cost was real, and the answers were always stale by the time they arrived.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed mt-4">
               I built <strong className="text-foreground">Lumi</strong> to be
               the team member who never sleeps, never forgets, and always has the
-              latest numbers &mdash; with an Obsidian vault as her persistent
+              latest numbers, with an Obsidian vault as her persistent
               memory.
             </p>
           </div>

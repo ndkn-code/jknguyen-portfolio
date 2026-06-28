@@ -9,7 +9,7 @@ import DashboardsSection from "./dashboards";
 import ImpactSection from "./impact";
 
 export const metadata: Metadata = {
-  title: "Lumist Growth Analytics — Data Case Study | Jack Nguyen",
+  title: "Lumist Growth Analytics: Data Case Study | Jack Nguyen",
   description:
     "An acquisition & growth analysis of an SAT-prep platform: which channels actually convert, what turns free students into paying ones, and how retention holds. SQL, Python, and Tableau on a synthetic dataset calibrated to real production distributions.",
 };

@@ -12,7 +12,7 @@ const STATS = [
   { value: "52", label: "Near-duplicate pairs" },
 ];
 
-const CROSS_SQL = `-- Vendors CLOSED in one entity but still OPEN in the other — a control gap.
+const CROSS_SQL = `-- Vendors CLOSED in one entity but still OPEN in the other, a control gap.
 WITH closed_in_mso AS (
   SELECT code FROM oas_element
   WHERE cmpcode = 'MSO' AND elmlevel = 3 AND code LIKE 'V%'
@@ -39,7 +39,7 @@ export default function AuditSection() {
             Before the spend question: is the vendor list even clean?
           </h2>
           <p className="text-muted-foreground max-w-2xl mb-10">
-            Vendor master data rots quietly — duplicates, vendors closed in one
+            Vendor master data rots quietly: duplicates, vendors closed in one
             company but live in another, addresses that never got a compliance
             review. The unglamorous audit that has to happen before anyone
             trusts a spend report.
@@ -76,7 +76,7 @@ export default function AuditSection() {
               </div>
             </figure>
             <Callout variant="note" title="Why it matters" className="mt-6">
-              <b>561</b> active vendors have never been paid — deactivation
+              <b>561</b> active vendors have never been paid, deactivation
               candidates that only widen the surface for error. <b>118</b> are
               closed in one entity yet still payable in the other (a control
               gap), <b>207</b> carry foreign addresses needing tax/compliance

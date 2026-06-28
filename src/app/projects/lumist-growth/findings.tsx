@@ -66,7 +66,7 @@ export default function FindingsSection() {
               caption="Signups by channel (bars) against conversion rate (line)."
             />
             <Callout title="Volume ≠ value">
-              The largest channel — short-form video — brings <b>1,693</b>{" "}
+              The largest channel, short-form video, brings <b>1,693</b>{" "}
               students but converts just <b>5.4%</b>. The smaller{" "}
               <b>creator</b> channel converts at <b>33%</b>, and social at 16%.
               Spend ranked by signups would back exactly the wrong channel.
@@ -80,7 +80,7 @@ export default function FindingsSection() {
               caption="Each channel plotted by conversion (x) and Day-30 retention (y); bubble = volume."
             />
             <Callout title="High-intent channels win on both axes">
-              Channels that convert better also <b>retain</b> better — creator
+              Channels that convert better also <b>retain</b> better, creator
               sits top-right (33% conv, 36% D30), while short-form video sits
               bottom-left (5%, 1.5%). Channel quality, not raw reach, is what
               compounds.
@@ -111,7 +111,7 @@ export default function FindingsSection() {
             >
               From the least-active quintile (1.3 days, <b>8%</b> convert) to the
               most-active (8.8 days, <b>27%</b>), conversion climbs steadily.
-              Activation — not discounting — is the lever.
+              Activation, not discounting, is the lever.
             </Callout>
           </Row>
 

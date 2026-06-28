@@ -7,7 +7,7 @@ import Callout from "@/components/ui/callout";
 const RECOMMENDATIONS = [
   {
     title: "Protect and grow the Champions",
-    body: "25% of customers drive 69% of revenue. A VIP/loyalty track and proactive retention on this segment defends the bulk of revenue far more cheaply than chasing new buyers — and the 72% repeat rate shows the loyalty is already there to build on.",
+    body: "25% of customers drive 69% of revenue. A VIP/loyalty track and proactive retention on this segment defends the bulk of revenue far more cheaply than chasing new buyers, and the 72% repeat rate shows the loyalty is already there to build on.",
   },
   {
     title: "Win back At-Risk before they lapse",
@@ -15,7 +15,7 @@ const RECOMMENDATIONS = [
   },
   {
     title: "Diversify beyond a single market",
-    body: "85.5% of revenue is the UK. The 42 other countries already transacting are a tested base to expand into — hedging concentration risk while reusing proven products and playbooks.",
+    body: "85.5% of revenue is the UK. The 42 other countries already transacting are a tested base to expand into, hedging concentration risk while reusing proven products and playbooks.",
   },
 ];
 

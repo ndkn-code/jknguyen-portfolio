@@ -68,7 +68,7 @@ export default function FindingsSection() {
               <b>Champions</b> are <b>25%</b> of customers but <b>69%</b> of
               revenue; add Loyal Customers and it&apos;s ~83%. The At-Risk,
               Hibernating and Lost segments are large in headcount but small in
-              value — a textbook case for targeted retention over blanket
+              value, a textbook case for targeted retention over blanket
               discounts.
             </Callout>
           </Row>
@@ -93,7 +93,7 @@ export default function FindingsSection() {
             <Callout title="Loyalty is real and durable">
               <b>72%</b> of customers come back for a second order, and the
               strongest cohorts still purchase at <b>~37%</b> a full year out.
-              Month-1 repeat sits around <b>21%</b> on average — retention, not
+              Month-1 repeat sits around <b>21%</b> on average, retention, not
               just acquisition, is what compounds here.
             </Callout>
           </Row>
@@ -106,7 +106,7 @@ export default function FindingsSection() {
               Concentration · customers &amp; geography
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold mt-2">
-              Revenue leans on a few customers — and one country
+              Revenue leans on a few customers, and one country
             </h2>
           </FadeUp>
           <Row>
@@ -117,7 +117,7 @@ export default function FindingsSection() {
             />
             <Callout variant="insight" title="A concentration (and expansion) signal">
               The top 10 customers are <b>16%</b> of revenue and just <b>~23%</b>{" "}
-              of customers make up 80%. Geographically it&apos;s starker — the{" "}
+              of customers make up 80%. Geographically it&apos;s starker, the{" "}
               <b>UK is 85.5%</b> of revenue, leaving 42 other countries as a
               tested base to grow into.
             </Callout>

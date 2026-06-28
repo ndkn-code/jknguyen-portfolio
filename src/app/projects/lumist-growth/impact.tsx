@@ -7,11 +7,11 @@ import Callout from "@/components/ui/callout";
 const RECOMMENDATIONS = [
   {
     title: "Rebalance spend toward high-efficiency channels",
-    body: "Short-form video drives the most signups but converts ~5%; creator, social and referral convert 2–6× better and retain better too. Shift budget toward where conversion actually compounds — and judge channels on paid users, not signups.",
+    body: "Short-form video drives the most signups but converts ~5%; creator, social and referral convert 2–6× better and retain better too. Shift budget toward where conversion actually compounds, and judge channels on paid users, not signups.",
   },
   {
     title: "Make activation the priority metric",
-    body: "Conversion more than triples from the least- to most-engaged students. An onboarding that pushes new users to a multi-day habit early lifts conversion across every channel — cheaper than buying more low-intent traffic.",
+    body: "Conversion more than triples from the least- to most-engaged students. An onboarding that pushes new users to a multi-day habit early lifts conversion across every channel, which is cheaper than buying more low-intent traffic.",
   },
   {
     title: "Set CAC targets by channel quality tier",

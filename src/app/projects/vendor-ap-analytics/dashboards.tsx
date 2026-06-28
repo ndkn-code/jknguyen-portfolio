@@ -36,7 +36,7 @@ export default function DashboardsSection() {
             The audit packaged into one BI dashboard a finance team could run
             monthly. I build these in Power BI at work; the repo carries build
             guides for both <b>Power BI</b> (with DAX measures) and{" "}
-            <b>Tableau Public</b>, plus the shaped extracts — the live Tableau
+            <b>Tableau Public</b>, plus the shaped extracts, the live Tableau
             link lands here once published.
           </p>
         </FadeUp>

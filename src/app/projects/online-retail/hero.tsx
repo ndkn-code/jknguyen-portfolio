@@ -34,7 +34,7 @@ export default function HeroSection() {
         </FadeUp>
         <FadeUp delay={0.1}>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-4">
-            Two years of real UK online-retail transactions — £19.6M across 5,852
+            Two years of real UK online-retail transactions, £19.6M across 5,852
             customers and 43 countries. Three questions:{" "}
             <span className="text-foreground font-semibold">
               who are the most valuable customers
@@ -49,7 +49,7 @@ export default function HeroSection() {
         </FadeUp>
         <FadeUp delay={0.15}>
           <p className="text-xs text-muted-foreground/70 max-w-xl mx-auto mb-8 italic">
-            Built on the public UCI Online Retail II dataset — real transactions,
+            Built on the public UCI Online Retail II dataset, real transactions,
             fully reproducible: every figure reruns from the raw file (fetch →
             clean → analyze). Dataset cited in the repo.
           </p>

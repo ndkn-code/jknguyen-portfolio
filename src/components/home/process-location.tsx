@@ -25,7 +25,7 @@ export default function WhyPMAndConnect() {
             </span>
             <div className="mt-6 space-y-4">
               <p className="text-sm text-foreground leading-relaxed max-w-lg">
-                As a co-founder, I wore every hat &mdash; but the work I kept
+                As a co-founder, I wore every hat, but the work I kept
                 gravitating toward was discovery and decision-making: talking to
                 users, digging through the data to find what mattered, and
                 measuring whether what we shipped worked. I&apos;ve owned the
@@ -36,7 +36,7 @@ export default function WhyPMAndConnect() {
               <p className="text-sm text-muted-foreground leading-relaxed max-w-lg italic">
                 &ldquo;When our AI Tutor stalled at 120 MAU, I dug into the
                 Supabase data and ran user interviews, found 3 root causes,
-                redesigned the onboarding &mdash; and grew usage to 680+. That
+                redesigned the onboarding, and grew usage to 680+. That
                 loop is what I love.&rdquo;
               </p>
             </div>

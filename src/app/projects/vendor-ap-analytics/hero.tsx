@@ -48,8 +48,7 @@ export default function HeroSection() {
         </FadeUp>
         <FadeUp delay={0.15}>
           <p className="text-xs text-muted-foreground/70 max-w-xl mx-auto mb-8 italic">
-            Built on a synthetic dataset modeled on a real Unit4/Coda ERP schema
-            — the kind of system I work in day to day. Production financial data
+            Built on a synthetic dataset modeled on a real Unit4/Coda ERP schema, the kind of system I work in day to day. Production financial data
             is confidential, so no real figures or names ship; the schema, SQL,
             and analyst workflow are true to life.
           </p>

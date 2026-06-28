@@ -62,7 +62,7 @@ export default function MethodologySection() {
           </FadeLeft>
           <FadeRight>
             <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
-              Representative query — channel volume vs value
+              Representative query: channel volume vs value
             </p>
             <CodeBlock code={CHANNEL_SQL} filename="01_channel_volume_vs_value.sql" />
           </FadeRight>

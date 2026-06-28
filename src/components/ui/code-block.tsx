@@ -6,7 +6,7 @@ interface CodeBlockProps {
 }
 
 // Lightweight, dependency-free code card (terminal-style header + mono body).
-// Always dark — reads well in both light and dark themes.
+// Always dark, reads well in both light and dark themes.
 export default function CodeBlock({
   code,
   language = "sql",

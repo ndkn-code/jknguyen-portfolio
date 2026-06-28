@@ -57,12 +57,12 @@ export default function ImpactSection() {
           <div className="bg-white dark:bg-card p-8 rounded-xl border border-border mb-12 text-left max-w-2xl mx-auto">
             <div className="space-y-4">
               {[
-                "Obsidian.md vault as persistent brain — 14 MCP tools for search, read, write, tags, and frontmatter management",
+                "Obsidian.md vault as persistent brain: 14 MCP tools for search, read, write, tags, and frontmatter management",
                 "AI agent with structured skill routing, not just a chatbot wrapper around an LLM",
                 "Deny-by-default security sandbox: only 8 endpoints reachable, all data access is read-only",
                 "AI-powered blog generation: research from vault, write SEO-optimized posts, publish drafts to CMS",
                 "8 skill modules covering analytics, engineering, support, social media, and content creation",
-                "Deployed as Docker container on GCP VM — used daily by the Lumist team",
+                "Deployed as Docker container on GCP VM, used daily by the Lumist team",
               ].map((item, i) => (
                 <motion.div
                   key={i}

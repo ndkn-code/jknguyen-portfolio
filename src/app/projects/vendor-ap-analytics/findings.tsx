@@ -67,7 +67,7 @@ export default function FindingsSection() {
             <Callout variant="insight" title="Spend is steeply Pareto">
               Of <b>$7.2B</b> in AP, the top <b>10</b> vendors take <b>37.9%</b>{" "}
               and the top <b>1%</b> (29 vendors) take <b>61.3%</b>. Just <b>82</b>{" "}
-              of 2,876 paying vendors cover 80% of spend — a short list where
+              of 2,876 paying vendors cover 80% of spend, a short list where
               sourcing and contract review actually move the number.
             </Callout>
           </Row>
@@ -93,7 +93,7 @@ export default function FindingsSection() {
               AP spans 15 service lines, led by <b>Surgery</b> ($721M),{" "}
               <b>Internal Medicine</b> ($664M), <b>Cardiology</b> ($636M) and{" "}
               <b>Radiology</b> ($596M). Because spend is spread, cost programs
-              have to work across the top tier — not just one line.
+              have to work across the top tier, not just one line.
             </Callout>
           </Row>
         </div>
@@ -116,7 +116,7 @@ export default function FindingsSection() {
             />
             <Callout variant="insight" title="A long late-payment tail">
               Mean payment lag is ~<b>29 days</b>, but <b>17%</b> of paid
-              invoices clear after 45 days (8.2% after 60) — roughly{" "}
+              invoices clear after 45 days (8.2% after 60), roughly{" "}
               <b>$1.2B</b> paid late. Combined with the 52 near-duplicate vendor
               records, that tail is where late-fee and double-payment risk
               concentrate.

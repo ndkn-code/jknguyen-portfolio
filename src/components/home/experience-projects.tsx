@@ -66,7 +66,7 @@ const allProjects: Project[] = [
       "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
     title: "Lumist Growth Analytics",
     description:
-      "Which acquisition channels actually convert, and what turns free students into paying ones — a SQL → Python → Tableau analysis of a 5,500-student SAT-prep platform.",
+      "Which acquisition channels actually convert, and what turns free students into paying ones, a SQL → Python → Tableau analysis of a 5,500-student SAT-prep platform.",
     tech: ["SQL", "Python", "Tableau"],
     image: "/images/lumist-growth/01_channel_volume_vs_value.png",
   },
@@ -78,7 +78,7 @@ const allProjects: Project[] = [
       "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400",
     title: "E-Commerce Customer Analytics",
     description:
-      "RFM segmentation, cohort retention, and revenue concentration on 1M+ rows of real UK e-commerce data (UCI Online Retail II) — fully reproducible. SQL → Python → Tableau.",
+      "RFM segmentation, cohort retention, and revenue concentration on 1M+ rows of real UK e-commerce data (UCI Online Retail II), fully reproducible. SQL → Python → Tableau.",
     tech: ["SQL", "Python", "Tableau"],
     image: "/images/online-retail/rfm_segments.png",
   },
@@ -90,7 +90,7 @@ const allProjects: Project[] = [
       "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
     title: "Vendor & AP Spend Analytics",
     description:
-      "Where the AP money goes and which vendors to clean up — advanced SQL + Power BI on a synthetic healthcare-finance ERP, surfacing spend concentration, never-paid vendors, and cross-entity compliance gaps.",
+      "Where the AP money goes and which vendors to clean up, advanced SQL + Power BI on a synthetic healthcare-finance ERP, surfacing spend concentration, never-paid vendors, and cross-entity compliance gaps.",
     tech: ["SQL", "Power BI", "Tableau"],
     image: "/images/vendor-ap-analytics/spend_pareto.png",
   },
@@ -102,7 +102,7 @@ const allProjects: Project[] = [
       "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400",
     title: "Revenue Forecasting",
     description:
-      "Daily-revenue forecasting through a volatile product launch — cutting error from ~22% to ~4.5% with gradient boosting + walk-forward backtesting. A recreation of my VNG work that generalizes across industries.",
+      "Daily-revenue forecasting through a volatile product launch, cutting error from ~22% to ~4.5% with gradient boosting + walk-forward backtesting. A recreation of my VNG work that generalizes across industries.",
     tech: ["Python", "scikit-learn", "pandas"],
     image: "/images/revenue-forecasting/02_backtest_forecast.png",
   },

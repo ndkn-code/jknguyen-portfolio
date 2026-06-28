@@ -7,11 +7,11 @@ const STEPS = [
   { name: "Features", note: "lags, rolling means, day-of-week, marketing, events" },
   { name: "Model", note: "gradient-boosting regressor (scikit-learn)" },
   { name: "Baselines", note: "naive, seasonal-naive, 7-day moving average" },
-  { name: "Validation", note: "walk-forward backtest — no look-ahead leakage" },
+  { name: "Validation", note: "walk-forward backtest: no look-ahead leakage" },
   { name: "Metric", note: "MAPE on a 90-day hold-out" },
 ];
 
-const BACKTEST = `# Walk-forward backtest — each day predicted using ONLY prior days.
+const BACKTEST = `# Walk-forward backtest: each day predicted using ONLY prior days.
 for pos in range(len(d) - 90, len(d)):
     train  = d.iloc[:pos]          # history up to (not incl.) the target day
     target = d.iloc[pos]

@@ -35,7 +35,7 @@ export default function MethodologySection() {
         </FadeUp>
         <FadeUp delay={0.05}>
           <p className="text-muted-foreground max-w-2xl mb-12">
-            One transactional table — 1.07M line items over two years — cleaned
+            One transactional table, 1.07M line items over two years, cleaned
             in Python, loaded to SQLite, and analyzed with SQL (CTEs + window
             functions). Customer-level RFM and monthly cohorts are derived from
             it.
@@ -60,13 +60,13 @@ export default function MethodologySection() {
               ))}
             </div>
             <p className="text-xs text-muted-foreground/70 pt-4">
-              UCI Online Retail II — a real UK online retailer, Dec 2009 → Dec
+              UCI Online Retail II, a real UK online retailer, Dec 2009 → Dec
               2011. Public &amp; fully reproducible.
             </p>
           </FadeLeft>
           <FadeRight>
             <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
-              Representative query — RFM segmentation (NTILE)
+              Representative query: RFM segmentation (NTILE)
             </p>
             <CodeBlock code={RFM_SQL} filename="03_rfm_segmentation.sql" />
           </FadeRight>

@@ -7,9 +7,9 @@ import FindingsSection from "./findings";
 import ImpactSection from "./impact";
 
 export const metadata: Metadata = {
-  title: "Revenue Forecasting (ML) — Case Study | Jack Nguyen",
+  title: "Revenue Forecasting (ML): Case Study | Jack Nguyen",
   description:
-    "Forecasting volatile daily revenue through a product launch with a gradient-boosting model and a leakage-safe walk-forward backtest — cutting forecast error from ~22% to ~4.5%. Python, scikit-learn, pandas. A recreation of my VNG forecasting work on synthetic data; the approach transfers across industries.",
+    "Forecasting volatile daily revenue through a product launch with a gradient-boosting model and a leakage-safe walk-forward backtest, cutting forecast error from ~22% to ~4.5%. Python, scikit-learn, pandas. A recreation of my VNG forecasting work on synthetic data; the approach transfers across industries.",
 };
 
 export default function RevenueForecastingPage() {
