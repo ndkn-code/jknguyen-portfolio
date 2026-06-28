@@ -76,15 +76,24 @@ export default function HeroSection() {
           </div>
         </FadeUp>
         <FadeUp delay={0.3}>
-          <a
-            href="https://github.com/ndkn-code/vng-revenue-forecasting"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-foreground text-background px-8 py-4 rounded-full font-semibold text-sm hover:opacity-90 transition-opacity shadow-lg"
-          >
-            View the notebook &amp; code on GitHub
-            <span aria-hidden>→</span>
-          </a>
+          <div className="flex flex-col items-center gap-3">
+            <a
+              href="https://github.com/ndkn-code/vng-revenue-forecasting"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-foreground text-background px-8 py-4 rounded-full font-semibold text-sm hover:opacity-90 transition-opacity shadow-lg"
+            >
+              View the notebook &amp; code on GitHub
+              <span aria-hidden>→</span>
+            </a>
+            <a
+              href="/case-studies/revenue-forecasting.pdf"
+              target="_blank"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              Download the 1-page summary (PDF) →
+            </a>
+          </div>
         </FadeUp>
       </div>
     </section>
