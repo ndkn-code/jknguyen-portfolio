@@ -7,7 +7,7 @@ export default function WhyPMAndConnect() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("ndkn.work@gmail.com").then(() => {
+    navigator.clipboard.writeText("jknguyen.wor@gmail.com").then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     });

@@ -11,7 +11,7 @@ export default function Navbar() {
   const links = [
     { href: "/", label: "Work", active: true },
     { href: "/#about", label: "About" },
-    { href: "mailto:ndkn.work@gmail.com", label: "Contact" },
+    { href: "mailto:jknguyen.wor@gmail.com", label: "Contact" },
     { href: "/jack_nguyen_data_analyst.pdf", label: "Resume", external: true },
   ];
 
@@ -48,7 +48,7 @@ export default function Navbar() {
         </div>
 
         <a
-          href="mailto:ndkn.work@gmail.com"
+          href="mailto:jknguyen.wor@gmail.com"
           className="bg-primary text-white px-6 py-2 rounded-full font-medium hover:opacity-90 active:scale-95 duration-150 transition-all"
         >
           Let&apos;s Talk
