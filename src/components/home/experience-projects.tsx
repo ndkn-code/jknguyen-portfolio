@@ -20,7 +20,7 @@ const experiences = [
     active: false,
   },
   {
-    title: "Product Management Intern at VNG Corporation",
+    title: "Data Analytics Intern at VNG Corporation",
     period: "Jun 2024 - Aug 2024 · Ho Chi Minh City · Internship",
     description: "",
     active: false,
@@ -114,7 +114,7 @@ const allProjects: Project[] = [
       "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
     title: "Lumist Analytics Dashboard",
     description:
-      "Lumist had 3,000+ users but no visibility into behavior. Built a dashboard tracking DAU, retention, and funnels that directly surfaced the AI Tutor adoption problem.",
+      "Lumist had 7,500+ users but no visibility into behavior. Built a dashboard tracking DAU, retention, and funnels that directly surfaced the AI Tutor adoption problem.",
     tech: ["React", "Supabase", "Recharts", "TypeScript"],
     image: "/images/lumist-analytics-hero.svg",
   },
@@ -126,7 +126,7 @@ const allProjects: Project[] = [
       "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400",
     title: "AI Customer Support System",
     description:
-      "Support messages were overwhelming a 2-person team at 3,000+ users. Deployed a chatbot that auto-resolves common queries and escalates edge cases to humans.",
+      "Support messages were overwhelming a 2-person team at 7,500+ users. Deployed a chatbot that auto-resolves common queries and escalates edge cases to humans.",
     tech: ["n8n", "Gemini AI", "Supabase Vector", "Zalo API"],
     image: "/images/ai-conversation-message.png",
   },

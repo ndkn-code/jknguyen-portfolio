@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Jack Nguyen | Product & Data",
   description:
-    "Co-Founder at Lumist.ai. Analytics-driven product builder, I turn data into decisions and ship AI-powered products that reached 3,000+ users.",
+    "Co-Founder at Lumist.ai. Analytics-driven product builder, I turn data into decisions and ship AI-powered products that reached 7,500+ users.",
 };
 
 export default function RootLayout({

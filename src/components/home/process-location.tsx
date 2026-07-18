@@ -29,14 +29,14 @@ export default function WhyPMAndConnect() {
                 gravitating toward was discovery and decision-making: talking to
                 users, digging through the data to find what mattered, and
                 measuring whether what we shipped worked. I&apos;ve owned the
-                full product lifecycle from zero to 3,000+ users, and I want to
+                full product lifecycle from zero to 7,500+ users, and I want to
                 bring that analytical, builder&apos;s instinct to a product or
                 data team at scale.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed max-w-lg italic">
-                &ldquo;When our AI Tutor stalled at 120 MAU, I dug into the
+                &ldquo;When our AI Tutor stalled at ~24 daily actives, I dug into the
                 Supabase data and ran user interviews, found 3 root causes,
-                redesigned the onboarding, and grew usage to 680+. That
+                redesigned the onboarding, and grew it past 400. That
                 loop is what I love.&rdquo;
               </p>
             </div>

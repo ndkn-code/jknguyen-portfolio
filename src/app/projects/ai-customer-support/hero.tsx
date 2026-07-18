@@ -46,7 +46,7 @@ export default function HeroSection() {
           >
             A multi-platform RAG chatbot I built to handle support across Zalo
             and Discord, with intelligent sales funnel tracking, intent
-            classification, and a 7-trigger escalation system for 3,000+ users.
+            classification, and a 7-trigger escalation system for 7,500+ users.
           </motion.p>
 
           <motion.div

@@ -58,7 +58,7 @@ export default function HeroHome() {
         className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10"
       >
         Analytics-driven product builder. I&apos;ve owned the full lifecycle, from SQL-driven analysis and user research to shipping an MVP
-        that reached 3,000+ users across Vietnam, turning messy data
+        that reached 7,500+ users across Vietnam, turning messy data
         into decisions that move the metrics.
       </motion.p>
 

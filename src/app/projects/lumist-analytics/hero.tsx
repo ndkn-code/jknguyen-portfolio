@@ -60,7 +60,7 @@ export default function HeroSection() {
           >
             A full-stack analytics platform I built to drive data-informed
             decisions for our SAT prep startup, tracking engagement, retention,
-            conversions, and feature adoption across 3,000+ users.
+            conversions, and feature adoption across 7,500+ users.
           </motion.p>
 
           <motion.div
