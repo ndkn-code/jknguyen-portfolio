@@ -34,6 +34,10 @@
 # local Claude Code settings — machine-specific, leaks job targets; never publish
 /.claude/settings.local.json
 
+# per-job tailored resumes, cover letters and build scripts; leaks which
+# companies you're applying to. Local only, never publish.
+/applications/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
@@ -49,3 +53,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local resume build venv
+.resume_venv/
