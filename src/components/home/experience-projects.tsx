@@ -9,15 +9,15 @@ import { FadeUp } from "@/components/animations/motion";
 const experiences = [
   {
     title: "Co-Founder at Lumist.ai",
-    period: "Jan 2024 - Present · Remote · Full time",
+    period: "Sept 2025 - Present · Remote · Full time",
     description: "",
     active: true,
   },
   {
     title: "ERP Analyst I at USF IT",
-    period: "Jan 2025 - Dec 2025 · Tampa · Full time",
+    period: "Jan 2025 - Present · Tampa · Full time",
     description: "",
-    active: false,
+    active: true,
   },
   {
     title: "Data Analytics Intern at VNG Corporation",
