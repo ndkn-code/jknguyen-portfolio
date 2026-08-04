@@ -38,15 +38,13 @@ export default function HeroSection() {
             cutting forecast error from{" "}
             <span className="text-foreground font-semibold">~22% to ~4.5%</span>{" "}
             with a feature-aware gradient-boosting model and a leakage-safe
-            walk-forward backtest. A recreation of my VNG forecasting work, with
-            an approach that transfers to any launch or seasonal revenue.
+            walk-forward backtest on a public synthetic dataset.
           </p>
         </FadeUp>
         <FadeUp delay={0.15}>
           <p className="text-xs text-muted-foreground/70 max-w-xl mx-auto mb-8 italic">
-            Synthetic game-revenue data with the real launch dynamics (decay,
-            seasonality, marketing, events), VNG&apos;s data is confidential, so
-            the modeling approach is the showcase.
+            This reconstruction is separate from confidential production work;
+            the public result and dataset stand on their own.
           </p>
         </FadeUp>
         <FadeUp delay={0.2}>

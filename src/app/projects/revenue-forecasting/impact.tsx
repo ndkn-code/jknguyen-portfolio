@@ -7,15 +7,15 @@ import Callout from "@/components/ui/callout";
 const RECOMMENDATIONS = [
   {
     title: "Forecast with drivers, not history",
-    body: "Naive and seasonal methods miss by ~20% because they can't see marketing pushes or in-game events coming. Feeding those drivers in cuts error to ~4%, accurate enough to actually plan against.",
+    body: "Naive and seasonal methods miss by approximately 22% because they cannot see planned drivers coming. Adding those drivers reduced MAPE to 4.5% in this public reconstruction.",
   },
   {
     title: "Backtest walk-forward, never random-split",
     body: "Random train/test splits leak the future into the past and flatter the model. A walk-forward backtest (predict each day from only prior days) gives the honest accuracy a finance team can trust.",
   },
   {
-    title: "A 4% forecast is a planning tool",
-    body: "At ~4% error the forecast is tight enough to size user-acquisition budgets, project cash flow, and staff live-ops around a launch, the difference between a number you report and one you act on.",
+    title: "A 4.5% forecast is a planning tool",
+    body: "At 4.5% MAPE, the reconstruction demonstrates how a feature-aware forecast can support scenario planning more reliably than a naive baseline.",
   },
 ];
 

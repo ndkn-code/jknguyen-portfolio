@@ -10,7 +10,7 @@ const features = [
     description:
       "Students pick a topic, prepare arguments with a timed notepad, then speak into the mic. Deepgram Nova-3 transcribes in real-time with interim results. In full-round mode, the AI delivers a counter-argument with text-to-speech, and students respond across multiple rounds.",
     image: "/images/debatelab-practice.jpg",
-    imageAlt: "DebateLab practice session showing live transcription and timer",
+    imageAlt: "Thinkfy practice session showing live transcription and timer",
   },
   {
     title: "AI Feedback & Scoring",
@@ -18,7 +18,7 @@ const features = [
     description:
       "After each session, Gemini 3.1 Lite Flash analyzes the transcript across 4 categories: Content and Argumentation (40 pts), Structure and Organization (25 pts), Language and Delivery (25 pts), and Persuasiveness (10 pts). Students get a total score with an animated progress ring, detailed sub-scores, and written feedback.",
     image: "/images/debatelab-feedback.jpg",
-    imageAlt: "DebateLab feedback page with score ring and category breakdown",
+    imageAlt: "Thinkfy feedback page with score ring and category breakdown",
   },
   {
     title: "AI Growth Coach",
@@ -26,7 +26,7 @@ const features = [
     description:
       "A dedicated AI coach powered by Groq (Llama 3.3 70B) with streaming responses. Students can discuss debate strategies, get topic research help, or review their past performance. The coach knows the student's history and adapts its advice.",
     image: "/images/debatelab-coach.jpg",
-    imageAlt: "DebateLab AI coach chat with streaming response",
+    imageAlt: "Thinkfy AI coach chat with streaming response",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function ShowcaseSection() {
             Product Showcase
           </h2>
           <p className="text-muted-foreground text-center mb-12 sm:mb-20 max-w-2xl mx-auto">
-            Three core experiences that make DebateLab a complete debate
+            Three core experiences that make Thinkfy a complete debate
             training platform.
           </p>
         </FadeUp>

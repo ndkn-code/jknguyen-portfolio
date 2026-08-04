@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { careerPublic } from "@/data/career-public";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,8 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Jack Nguyen | Product & Data",
-  description:
-    "Co-Founder at Lumist.ai. Analytics-driven product builder, I turn data into decisions and ship AI-powered products that reached 7,500+ users.",
+  description: careerPublic.profile.summary,
 };
 
 export default function RootLayout({

@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import { careerPublic } from "@/data/career-public";
+
+const thinkfy = careerPublic.projects.find((project) => project.id === "thinkfy")!;
 
 const techStack = [
   { name: "Next.js", icon: "▲" },
@@ -50,7 +53,7 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[1.05] mb-6 sm:mb-8 tracking-tight"
         >
-          DebateLab:{" "}
+          {thinkfy.title}:{" "}
           <span className="bg-gradient-to-r from-primary to-violet-500 bg-clip-text text-transparent">
             AI-Powered Debate Practice
           </span>
@@ -80,7 +83,7 @@ export default function HeroSection() {
             rel="noopener noreferrer"
             className="bg-primary text-white px-8 py-4 rounded-full font-semibold text-sm hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95 inline-flex items-center gap-2 group"
           >
-            Try DebateLab
+            Try Thinkfy
             <span className="inline-block group-hover:translate-x-1 transition-transform">
               &rarr;
             </span>
@@ -143,7 +146,7 @@ export default function HeroSection() {
           {/* Screenshot */}
           <Image
             src="/images/debatelab-dashboard.png"
-            alt="DebateLab dashboard showing weekly activity, streak, XP progress, and recent practice sessions"
+            alt="Thinkfy dashboard showing weekly activity, streak, XP progress, and recent practice sessions"
             width={1920}
             height={1080}
             quality={95}

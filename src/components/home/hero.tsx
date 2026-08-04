@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { careerPublic } from "@/data/career-public";
 
 export default function HeroHome() {
   const [copied, setCopied] = useState(false);
@@ -23,7 +24,7 @@ export default function HeroHome() {
         className="inline-flex items-center mb-6 px-4 py-2 bg-card border border-border rounded-full text-sm font-semibold shadow-sm"
       >
         <span className="w-2.5 h-2.5 rounded-full bg-green-500 mr-2 animate-pulse" />
-        Open to Product & Data Analyst roles
+        {careerPublic.profile.availability}
       </motion.div>
 
       <motion.h1
@@ -43,11 +44,10 @@ export default function HeroHome() {
               height={96}
             />
           </div>
-          <span>Jack Nguyen!</span>
+          <span>{careerPublic.profile.name}!</span>
         </div>
         <div className="mt-4">
-          <span className="text-muted-foreground/30">Co-Founder @ </span>
-          <span className="text-primary">Lumist.ai</span>
+          <span className="text-primary">{careerPublic.profile.role_line}</span>
         </div>
       </motion.h1>
 
@@ -57,9 +57,7 @@ export default function HeroHome() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10"
       >
-        Analytics-driven product builder. I&apos;ve owned the full lifecycle, from SQL-driven analysis and user research to shipping an MVP
-        that reached 7,500+ users across Vietnam, turning messy data
-        into decisions that move the metrics.
+        {careerPublic.profile.summary}
       </motion.p>
 
       <motion.div

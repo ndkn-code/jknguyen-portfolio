@@ -2,8 +2,6 @@
 
 import {
   FadeUp,
-  FadeLeft,
-  FadeRight,
   motion,
   staggerContainer,
   staggerItem,

@@ -3,31 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import { careerPublic } from "@/data/career-public";
 
-// Project order for navigation
-const projectOrder = [
-  "/projects/debatelab",
-  "/projects/lumist-growth",
-  "/projects/online-retail",
-  "/projects/vendor-ap-analytics",
-  "/projects/revenue-forecasting",
-  "/projects/lumist-analytics",
-  "/projects/ai-customer-support",
-  "/projects/nemoclaw",
-  "/projects/lead-scoring-crm",
-];
-
-const projectNames: Record<string, string> = {
-  "/projects/debatelab": "DebateLab",
-  "/projects/lumist-growth": "Lumist Growth",
-  "/projects/online-retail": "E-Commerce Analytics",
-  "/projects/vendor-ap-analytics": "Vendor & AP Analytics",
-  "/projects/revenue-forecasting": "Revenue Forecasting",
-  "/projects/lumist-analytics": "Lumist Analytics",
-  "/projects/ai-customer-support": "AI Support",
-  "/projects/nemoclaw": "Lumi",
-  "/projects/lead-scoring-crm": "Lead Scoring",
-};
+const projectOrder = careerPublic.projects.map((project) => project.href);
+const projectNames = Object.fromEntries(
+  careerPublic.projects.map((project) => [project.href, project.title]),
+);
 
 function useNextProject() {
   const current = usePathname();

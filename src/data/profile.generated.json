@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "generated": {
+    "allowlist_version": 1,
+    "claim_count": 10,
+    "content_sha256": "0991ef4a66199a15bfd533daa082372c609d1b22a7dd1ba221fec1ad391173b8"
+  },
+  "profile": {
+    "name": "Jack Nguyen",
+    "role_line": "Co-Founder @ Lumist.ai",
+    "headline": "Analytics-driven product builder",
+    "availability": "Open to Product & Data Analyst roles",
+    "summary": "Analytics-driven product builder working across user research, product delivery, and data analysis, including helping build a learning product that reached 7,500+ users as of July 26, 2026.",
+    "why_product_data": "As a co-founder and analyst, I keep gravitating toward the same loop, talk to users, find the evidence that matters, ship a focused solution, and measure what changed. I want to bring that builder's instinct and analytical discipline to a product or data team at scale.",
+    "builder_quote": "I am most energized by turning a messy user or workflow problem into a clear decision, a shipped solution, and a measurable learning loop.",
+    "location": "Tampa, FL",
+    "linkedin_url": "https://www.linkedin.com/in/ndkn10292002/",
+    "portfolio_url": "https://jknguyen-portfolio.vercel.app",
+    "github_url": "https://github.com/ndkn-code"
+  },
+  "experiences": [
+    {
+      "id": "lumist",
+      "title": "Co-Founder",
+      "organization": "Lumist.ai",
+      "period": "Sep 2025 - Present",
+      "description": "Leads product discovery, analytics, workflow design, and AI-enabled prototyping for a learning product.",
+      "active": true
+    },
+    {
+      "id": "usf-health",
+      "title": "ERP Analyst I",
+      "organization": "USF Health",
+      "period": "Jan 2025 - Present",
+      "description": "Supports enterprise reporting, budgeting workflows, documentation, and process improvements.",
+      "active": true
+    },
+    {
+      "id": "vng",
+      "title": "Data Analytics Intern",
+      "organization": "VNG Corporation",
+      "period": "Jun 2024 - Aug 2024",
+      "description": "Worked on launch forecasting and delivery analysis using Python.",
+      "active": false
+    },
+    {
+      "id": "deloitte",
+      "title": "Risk Advisory Intern",
+      "organization": "Deloitte Vietnam",
+      "period": "May 2023 - Jul 2023",
+      "description": "Supported ERP testing and delivery using Tableau and Oracle BI Publisher.",
+      "active": false
+    }
+  ],
+  "projects": [
+    {
+      "id": "thinkfy",
+      "href": "/projects/debatelab",
+      "title": "Thinkfy (formerly DebateLab)",
+      "description": "Debate-practice product with speech transcription, AI scoring across 12 categories, Vietnamese localization, and about 1,000 users as of July 26, 2026.",
+      "repository_url": "https://github.com/ndkn-code/DebateLab",
+      "image": "/images/debatelab-dashboard.png",
+      "tech": [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "Gemini",
+        "Groq",
+        "Deepgram"
+      ],
+      "categories": [
+        "Product",
+        "AI"
+      ],
+      "badge": "Flagship"
+    },
+    {
+      "id": "lumist-growth",
+      "href": "/projects/lumist-growth",
+      "title": "Lumist Growth Analytics",
+      "description": "Grouped 151 free-text acquisition labels into seven channels across 5,500 students and compared 5.4% versus 33% conversion patterns to identify growth opportunities.",
+      "repository_url": "https://github.com/ndkn-code/lumist-growth-analytics",
+      "image": "/images/lumist-growth/01_channel_volume_vs_value.png",
+      "tech": [
+        "SQL",
+        "Python",
+        "pandas"
+      ],
+      "categories": [
+        "Data"
+      ],
+      "badge": "Data"
+    },
+    {
+      "id": "online-retail",
+      "href": "/projects/online-retail",
+      "title": "E-Commerce Customer Analytics",
+      "description": "Analyzed 1.07M UK Online Retail II rows with SQL RFM and cohort methods, identifying a Champion segment representing 25% of customers and 69% of dataset revenue.",
+      "repository_url": "https://github.com/ndkn-code/online-retail-analytics",
+      "image": "/images/online-retail/rfm_segments.png",
+      "tech": [
+        "SQL",
+        "Python",
+        "pandas",
+        "Tableau"
+      ],
+      "categories": [
+        "Data"
+      ],
+      "badge": "Real Data"
+    },
+    {
+      "id": "vendor-ap",
+      "href": "/projects/vendor-ap-analytics",
+      "title": "Vendor and Accounts Payable Analytics",
+      "description": "Used advanced SQL and BI tools on a synthetic two-entity ERP ledger to surface spend concentration, never-paid vendors, and cross-entity exception patterns.",
+      "repository_url": "https://github.com/ndkn-code/vendor-ap-analytics",
+      "image": "/images/vendor-ap-analytics/spend_pareto.png",
+      "tech": [
+        "SQL",
+        "Power BI",
+        "Tableau"
+      ],
+      "categories": [
+        "Data"
+      ],
+      "badge": "BI"
+    },
+    {
+      "id": "revenue-forecasting",
+      "href": "/projects/revenue-forecasting",
+      "title": "Public Revenue Forecasting Reconstruction",
+      "description": "Built a public forecasting workflow on synthetic data using gradient boosting and walk-forward validation, reducing MAPE from approximately 22% to 4.5%.",
+      "repository_url": "https://github.com/ndkn-code/vng-revenue-forecasting",
+      "image": "/images/revenue-forecasting/02_backtest_forecast.png",
+      "tech": [
+        "Python",
+        "pandas",
+        "scikit-learn",
+        "gradient boosting"
+      ],
+      "categories": [
+        "Data"
+      ],
+      "badge": "ML"
+    }
+  ]
+}

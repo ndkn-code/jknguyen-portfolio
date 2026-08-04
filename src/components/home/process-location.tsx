@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FadeUp } from "@/components/animations/motion";
+import { careerPublic } from "@/data/career-public";
 
 export default function WhyPMAndConnect() {
   const [copied, setCopied] = useState(false);
@@ -25,19 +26,10 @@ export default function WhyPMAndConnect() {
             </span>
             <div className="mt-6 space-y-4">
               <p className="text-sm text-foreground leading-relaxed max-w-lg">
-                As a co-founder, I wore every hat, but the work I kept
-                gravitating toward was discovery and decision-making: talking to
-                users, digging through the data to find what mattered, and
-                measuring whether what we shipped worked. I&apos;ve owned the
-                full product lifecycle from zero to 7,500+ users, and I want to
-                bring that analytical, builder&apos;s instinct to a product or
-                data team at scale.
+                {careerPublic.profile.why_product_data}
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed max-w-lg italic">
-                &ldquo;When our AI Tutor stalled at ~24 daily actives, I dug into the
-                Supabase data and ran user interviews, found 3 root causes,
-                redesigned the onboarding, and grew it past 400. That
-                loop is what I love.&rdquo;
+                &ldquo;{careerPublic.profile.builder_quote}&rdquo;
               </p>
             </div>
           </div>
@@ -57,7 +49,9 @@ export default function WhyPMAndConnect() {
                 Currently building at{" "}
                 <span className="text-primary">Lumist.ai</span>
               </p>
-              <p className="text-sm text-muted-foreground mt-1">Tampa, FL</p>
+              <p className="text-sm text-muted-foreground mt-1">
+                {careerPublic.profile.location}
+              </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full">
               <button
@@ -67,7 +61,7 @@ export default function WhyPMAndConnect() {
                 {copied ? "Copied!" : "Copy Email"}
               </button>
               <a
-                href="https://www.linkedin.com/in/ndkn10292002/"
+                href={careerPublic.profile.linkedin_url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 bg-card text-foreground border border-border px-5 py-3 rounded-full font-semibold text-sm hover:bg-muted transition-colors shadow-sm text-center"

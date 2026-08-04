@@ -7,11 +7,13 @@ import ShowcaseSection from "./showcase";
 import ArchitectureSection from "./architecture";
 import FeaturesSection from "./features";
 import ImpactSection from "./impact";
+import { careerPublic } from "@/data/career-public";
+
+const thinkfy = careerPublic.projects.find((project) => project.id === "thinkfy")!;
 
 export const metadata: Metadata = {
-  title: "DebateLab - Case Study | Jack Nguyen",
-  description:
-    "AI-powered solo debate practice platform for Vietnamese students. Real-time speech-to-text, AI analysis, coaching, gamification, and bilingual i18n.",
+  title: `${thinkfy.title} - Case Study | Jack Nguyen`,
+  description: thinkfy.description,
 };
 
 export default function DebateLabPage() {

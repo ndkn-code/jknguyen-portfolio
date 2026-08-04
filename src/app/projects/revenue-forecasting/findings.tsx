@@ -51,7 +51,7 @@ export default function FindingsSection() {
             A 7-day moving average, a typical &ldquo;business-as-usual&rdquo;
             forecast, misses by <b>~22%</b>; seasonal-naive by 24%. The
             gradient-boosting model lands at <b>4.5%</b>, an <b>~80% error
-            reduction</b>. (Mirrors the 20%→4% result I delivered at VNG.)
+            reduction</b> within this public reconstruction.
           </Callout>
         </Row>
 

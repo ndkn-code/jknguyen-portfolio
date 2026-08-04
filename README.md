@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jack Nguyen portfolio
 
-## Getting Started
+Public Next.js portfolio for Jack Nguyen's product and data work.
 
-First, run the development server:
+## Local development
 
-```bash
+```text
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project uses the installed Next.js documentation under `node_modules/next/dist/docs/` as the version-specific implementation reference.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Public career data
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Profile, experience, project-card, metadata, and project-navigation facts come from `src/data/profile.generated.json`. That file is a sanitized, deterministic export from the sibling private Career OS; it is not edited manually.
 
-## Learn More
+From `../jknguyen-career`:
 
-To learn more about Next.js, take a look at the following resources:
+```text
+./career export public
+./career export public --apply
+./career export public --check
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The allowlist selects exact `public_*` fields from verified, public, non-stale claims. Private sources, applications, contacts, review notes, and confidential projects are excluded.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Verification
 
-## Deploy on Vercel
+```text
+npm test
+npm run lint
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`npm run build` checks the generated data schema, SHA-256 identity, privacy boundary, approved routes, and forbidden private claims before compiling the portfolio.
